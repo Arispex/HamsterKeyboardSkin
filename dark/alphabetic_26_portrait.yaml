@@ -131,7 +131,7 @@ ButtonHintForeground: &axqp
   fontSize: 20
   center:
     x: 0.5
-    y: 0.7
+    y: 0.85
 
 #上划气泡字符样式
 ButtonSwipeUpHintForeground: &uhqp
@@ -139,7 +139,7 @@ ButtonSwipeUpHintForeground: &uhqp
   fontSize: 18
   center:
     x: 0.5
-    y: 0.7
+    y: 0.85
 
 #长按气泡字符样式
 ButtonHoldSymbolsOfqForeground: &iaqp
@@ -148,7 +148,7 @@ ButtonHoldSymbolsOfqForeground: &iaqp
   fontSize: 18
   center:
     x: 0.5
-    y: 0.8
+    y: 0.85
 
 preeditHeight: 26
 toolbarHeight: 45
