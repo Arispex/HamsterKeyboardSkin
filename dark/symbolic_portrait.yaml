@@ -55,7 +55,7 @@ verticalCandidateButton: &xlan
 
 preeditHeight: 26
 toolbarHeight: 45
-keyboardHeight: 226
+keyboardHeight: 216
 
 preedit:
   insets: {left: 10, top: 2}
