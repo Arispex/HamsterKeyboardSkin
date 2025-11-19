@@ -13,79 +13,30 @@ fontFace:
 - url: "HYZhengYuan-55W.ttf"
 - url: "TumanPUA.ttf"
 
-# Funum 键盘
-Funum:
-  iPhone:
-    portrait: Funum_portrait
-    landscape: Funum_portrait
 
 # 中文键盘
 pinyin:
   iPhone:
     portrait: pinyin_26_portrait
     landscape: pinyin_26_landscape
-  iPad:
-    portrait: iPad_pinyin_26_portrait
-    landscape: iPad_pinyin_26_landscape
-    floating: iPad_pinyin_26_float
 
 # 英文键盘
 alphabetic:
   iPhone:
     portrait: alphabetic_26_portrait
     landscape: pinyin_26_landscape
-  iPad:
-    portrait: iPad_pinyin_26_portrait
-    landscape: iPad_pinyin_26_landscape
-    floating: iPad_pinyin_26_float
 
 # 数字键盘
 numeric:
   iPhone:
     portrait: numeric_9_portrait
     landscape: numeric_9_landscape
-  iPad:
-    portrait: iPad_numeric_26_portrait
-    landscape: iPad_numeric_26_landscape
-    floating: numeric_9_portrait
 
 # 符号键盘
 symbolic:
   iPhone:
     portrait: symbolic_portrait
     landscape: symbolic_landscape
-  iPad:
-    portrait: iPad_symbolic_portrait
-    landscape: iPad_symbolic_landscape
-    floating: iPad_symbolic_float
-
-# 搜索浮动键盘
-floatsearch:
-  iPhone:
-    portrait: floatsearch_portrait
-    landscape: floatsearch_portrait
-
-# 设置浮动键盘
-floatconfig:
-  iPhone:
-    portrait: floatconfig_portrait
-    landscape: floatconfig_portrait
-
-# switch 键盘
-floatswitch:
-  iPhone:
-    portrait: floatswitch_portrait
-    landscape: floatswitch_portrait
-
-#表情键盘
-# 符号键盘
-emoji:
-  iPhone:
-    portrait: emoji_portrait
-    landscape: emoji_portrait
-  iPad:
-    portrait: emoji_portrait
-    landscape: emoji_portrait
 
 keySounds:
   - inputKeySound: "sounds/click.m4a"
