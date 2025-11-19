@@ -1301,7 +1301,7 @@ uButton:
   action: {character: u}
   uppercasedStateAction: {character: U}
   swipeUpAction: {symbol: 7}
-  swipeDownAction: {character: ^}
+  swipeDownAction: {symbol: ^}
   holdSymbolsStyle: uButtonHoldSymbolsStyle
 
 uButtonBackgroundStyle:
