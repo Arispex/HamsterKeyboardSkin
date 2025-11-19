@@ -151,7 +151,7 @@ ButtonHoldSymbolsOfqForeground: &iaqp
     y: 0.8
 
 preeditHeight: 26
-toolbarHeight: 40
+toolbarHeight: 45
 keyboardHeight: 216
 
 preedit:

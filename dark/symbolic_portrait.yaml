@@ -54,7 +54,7 @@ verticalCandidateButton: &xlan
     y: 0.48
 
 preeditHeight: 26
-toolbarHeight: 40
+toolbarHeight: 45
 keyboardHeight: 226
 
 preedit:
