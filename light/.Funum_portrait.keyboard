@@ -1,0 +1,269 @@
+"\u6570\u5B57\u524D\u666F\u7F29\u653E": 0.58
+"\u6309\u952E\u4E0A\u6807\u524D\u666F\u6837\u5F0F":
+  fontSize: 0.88em
+  center:
+    y: 0.35
+  normalColor: '38383855'
+  highlightColor: '38383855'
+"\u6309\u952E\u6587\u5B57\u524D\u666F\u6837\u5F0F":
+  fontSize: 0.75em
+  center:
+    y: 1.05
+  normalColor: '383838'
+  highlightColor: '383838'
+keyboardLayout:
+- VStack:
+    subviews:
+    - Cell: hamsterButton
+    - Cell: uploadButton
+    - Cell: soundsButton
+- VStack:
+    subviews:
+    - Cell: scriptButton
+    - Cell: skinButton
+    - Cell: fileButton
+- VStack:
+    subviews:
+    - Cell: 7Button
+    - Cell: 8Button
+    - Cell: 9Button
+- VStack:
+    subviews:
+    - Cell: backButton
+    - Cell: 0Button
+    - Cell: "\u70B9Button"
+floatTargetScale:
+  x: 0.55
+  y: 0.55
+keyboardStyle:
+  insets:
+    top: 5
+    left: 5
+    bottom: 5
+    right: 5
+  backgroundStyle: keyboardBackgroundStyle
+keyboardBackgroundStyle:
+  type: original
+  normalColor: FFFFFF33
+  cornerRadius: 15
+  borderSize: 0.5
+  normalBorderColor: 22222255
+  normalLowerEdgeColor: 55555500
+hamsterButton:
+  size:
+  backgroundStyle: ButtonBackgroundStyle
+  foregroundStyle:
+  - hamsterButtonForegroundStyle1
+  action:
+    symbol: 1
+hamsterButtonForegroundStyle1:
+  normalImage:
+    file: letter
+    image: IMG62
+  highlightImage:
+    file: letter_p
+    image: IMG62
+  targetScale: 0.58
+uploadButton:
+  size:
+  backgroundStyle: ButtonBackgroundStyle
+  foregroundStyle:
+  - uploadButtonForegroundStyle1
+  action:
+    symbol: 2
+uploadButtonForegroundStyle1:
+  normalImage:
+    file: letter
+    image: IMG63
+  highlightImage:
+    file: letter_p
+    image: IMG63
+  targetScale: 0.58
+soundsButton:
+  size:
+  backgroundStyle: ButtonBackgroundStyle
+  foregroundStyle:
+  - soundsButtonForegroundStyle1
+  action:
+    symbol: 3
+soundsButtonForegroundStyle1:
+  normalImage:
+    file: letter
+    image: IMG64
+  highlightImage:
+    file: letter_p
+    image: IMG64
+  targetScale: 0.58
+scriptButton:
+  size:
+  backgroundStyle: ButtonBackgroundStyle
+  foregroundStyle:
+  - scriptButtonForegroundStyle1
+  action:
+    symbol: 4
+scriptButtonForegroundStyle1:
+  normalImage:
+    file: letter
+    image: IMG65
+  highlightImage:
+    file: letter_p
+    image: IMG65
+  targetScale: 0.58
+skinButton:
+  size:
+  backgroundStyle: ButtonBackgroundStyle
+  foregroundStyle:
+  - skinButtonForegroundStyle1
+  action:
+    symbol: 5
+skinButtonForegroundStyle1:
+  normalImage:
+    file: letter
+    image: IMG66
+  highlightImage:
+    file: letter_p
+    image: IMG66
+  targetScale: 0.58
+fileButton:
+  size:
+  backgroundStyle: ButtonBackgroundStyle
+  foregroundStyle:
+  - fileButtonForegroundStyle1
+  action:
+    symbol: 6
+fileButtonForegroundStyle1:
+  normalImage:
+    file: letter
+    image: IMG67
+  highlightImage:
+    file: letter_p
+    image: IMG67
+  targetScale: 0.58
+7Button:
+  size:
+  backgroundStyle: ButtonBackgroundStyle
+  foregroundStyle:
+  - 7ButtonForegroundStyle1
+  action:
+    symbol: 7
+7ButtonForegroundStyle1:
+  normalImage:
+    file: letter
+    image: IMG68
+  highlightImage:
+    file: letter_p
+    image: IMG68
+  targetScale: 0.58
+8Button:
+  size:
+  backgroundStyle: ButtonBackgroundStyle
+  foregroundStyle:
+  - 8ButtonForegroundStyle1
+  action:
+    symbol: 8
+8ButtonForegroundStyle1:
+  normalImage:
+    file: letter
+    image: IMG69
+  highlightImage:
+    file: letter_p
+    image: IMG69
+  targetScale: 0.58
+9Button:
+  size:
+  backgroundStyle: ButtonBackgroundStyle
+  foregroundStyle:
+  - 9ButtonForegroundStyle1
+  action:
+    symbol: 9
+9ButtonForegroundStyle1:
+  normalImage:
+    file: letter
+    image: IMG70
+  highlightImage:
+    file: letter_p
+    image: IMG70
+  targetScale: 0.58
+0Button:
+  size:
+  backgroundStyle: ButtonBackgroundStyle
+  foregroundStyle:
+  - 0ButtonForegroundStyle1
+  action:
+    symbol: 0
+0ButtonForegroundStyle1:
+  normalImage:
+    file: letter
+    image: IMG71
+  highlightImage:
+    file: letter_p
+    image: IMG671
+  targetScale: 0.58
+backButton:
+  size:
+  backgroundStyle: ButtonBackgroundStyle
+  foregroundStyle:
+  - backButtonForegroundStyle1
+  action: backspace
+backButtonForegroundStyle1:
+  normalImage:
+    file: letter
+    image: IMG73
+  highlightImage:
+    file: letter_p
+    image: IMG73
+  targetScale: 0.58
+"\u70B9Button":
+  size:
+  backgroundStyle: ButtonBackgroundStyle
+  foregroundStyle:
+  - "\u70B9ButtonForegroundStyle1"
+  action:
+    symbol: .
+"\u70B9ButtonForegroundStyle1":
+  normalImage:
+    file: letter
+    image: IMG72
+  highlightImage:
+    file: letter_p
+    image: IMG72
+  targetScale: 0.58
+backupButton:
+  size:
+  backgroundStyle: ButtonBackgroundStyle
+  foregroundStyle:
+  - backupButtonForegroundStyle1
+  action:
+    symbol: 7
+backupButtonForegroundStyle1:
+  normalImage:
+    file: letter
+    image: IMG68
+  highlightImage:
+    file: letter_p
+    image: IMG68
+  targetScale: 0.58
+ButtonBackgroundStyle:
+  insets:
+    top: 5
+    left: 8
+    bottom: 5
+    right: 8
+  type: original
+  normalColor: FFFFFF
+  cornerRadius: 18
+  borderSize: 0.5
+  normalBorderColor: 22222255
+  normalLowerEdgeColor: 5555555500
+  targetScale: 0.65
+animation:
+- type: bounds
+  duration: 60
+  repeatCount: 1
+  fromScale: 1
+  toScale: 0.87
+- type: bounds
+  duration: 80
+  repeatCount: 1
+  fromScale: 0.87
+  toScale: 1

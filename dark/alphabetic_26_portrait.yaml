@@ -1,0 +1,4124 @@
+#26键字符图片样式
+26zfstyle: &26zf
+  targetScale: 0.5
+  center:
+    x: 0.5
+    y: 0.5
+
+#26键字符字符样式
+26zfstyle1: &26zf1
+  fontSize: 15
+  center:
+    x: 0.5
+    y: 0.95
+
+#上划字符样式
+ButtonUpForeground: &uhzf
+  normalColor: b5bac4
+  highlightColor: fafafa00
+  center:
+    #x: 0.7 #右上角
+    x: 0.3
+    y: 0.6
+  fontSize: 8
+
+#下划字符样式
+ButtonDownForeground: &xhzf
+  normalColor: b5bac4
+  highlightColor: fafafa00
+  center:
+    x: 0.7
+    y: 0.6
+  fontSize: 8
+
+#z~m下划字符样式
+zButtonDownForeground: &zxhzf
+  normalColor: b5bac4
+  highlightColor: fafafa00
+  center:
+    x: 0.5
+    y: 1.18
+  fontSize: 7
+
+#Shift按钮前景样式
+shiftButtonForeground: &shift_qj
+  targetScale: 0.7
+  center:
+    x: 0.5
+    y: 0.45
+
+#Backspace按钮前景图片样式
+BackspaceButtonForeground: &Backspace_qj
+  targetScale: 0.8
+  center:
+    x: 0.5
+    y: 0.45
+
+#123按钮前景图片样式
+123ButtonForeground: &123_qj
+  targetScale: 1
+  center:
+    x: 0.5
+    y: 0.46
+
+#sym按钮前景图片样式
+symButtonForeground: &sym_qj
+  targetScale: 0.8
+  center:
+    x: 0.5
+    y: 0.46
+
+#punc按钮前景样式
+puncButtonForeground: &punc_qj
+  targetScale: 0.7
+  center:
+    x: 0.5
+    y: 0.46
+
+#space按钮前景图片样式
+spaceButtonForeground: &space_qj
+  targetScale: 0.55
+  center:
+    x: 0.5
+    y: 0.4
+
+#enter按钮前景图片样式
+ReturnButtonForeground: &enter_qj
+  targetScale: 0.6
+  center:
+    x: 0.7
+    y: 0.46
+
+ReturnButtonForeground1: &enter_qj1
+  targetScale: 0.65
+  center:
+    x: 0.35
+    y: 0.46
+
+#cnen按钮前景样式
+cnenButtonForeground: &cnen_qj
+  #targetScale: 0.95
+  center:
+    x: 0.5
+    y: 0.8
+
+状态栏主图标及1缩放: &toolbarButton_targetScale 0.8
+状态栏图标2-7缩放: &toolbarButton_targetScale1 0.55
+横排序号字体大小: &FontSize_hpxh 20
+横排文字字体大小: &FontSize_hpwz 20
+横排注释字体大小: &FontSize_hpvu 16
+下拉序号字体大小: &FontSize_xlxh 20
+下拉文字字体大小: &FontSize_xlwz 20
+下拉注释字体大小: &FontSize_xlvu 16
+
+#状态栏图标字符样式(暂时保留)
+#toolbarButtonForeground: &vtltb
+toolbarButtonForeground:
+  normalColor: F0ffffff
+  highlightColor: F0ffffff
+  fontSize: 16
+
+#下拉候选按钮字符样式
+verticalCandidateButton: &xlan
+  targetScale: 0.6
+  center:
+    x: 0.5
+    y: 0.48
+
+#按下气泡字符样式
+ButtonHintForeground: &axqp
+  normalColor: fafafa
+  fontSize: 20
+  center:
+    x: 0.5
+    y: 0.7
+
+#上划气泡字符样式
+ButtonSwipeUpHintForeground: &uhqp
+  normalColor: fafafa
+  fontSize: 18
+  center:
+    x: 0.5
+    y: 0.7
+
+#长按气泡字符样式
+ButtonHoldSymbolsOfqForeground: &iaqp
+  normalColor: f5f5f5
+  highlightColor: fafafa
+  fontSize: 18
+  center:
+    x: 0.5
+    y: 0.8
+
+preeditHeight: 26
+toolbarHeight: 40
+keyboardHeight: 216
+
+preedit:
+  insets: {left: 10, top: 2}
+  backgroundStyle: preeditBackgroundStyle
+  foregroundStyle: preeditForegroundStyle
+
+preeditBackgroundStyle:
+  normalImage:
+    file: bj
+    image: IMG3
+
+preeditForegroundStyle:
+  textColor: f2f2f2
+  fontSize: 16
+
+toolbar:
+  backgroundStyle: toolbarBackgroundStyle
+  # primaryButtonStyle: primaryButtonStyle
+  # secondaryButtonStyle:
+  # - toolbarButton1Style
+  # - toolbarButton6Style
+  # - toolbarButton3Style
+  # - toolbarButton7Style
+  #- toolbarButton4Style
+  # - toolbarButton5Style
+  # - toolbarButton2Style
+  horizontalCandidateStyle: horizontalCandidateStyle
+  verticalCandidateStyle: verticalCandidateStyle
+
+toolbarBackgroundStyle:
+  normalImage:
+    file: bj
+    image: IMG1
+
+primaryButtonStyle:
+  backgroundStyle: #toolbarButtonBackgroundStyle
+  foregroundStyle: primaryButtonForegroundStyle
+  action: {floatKeyboardType: floatconfig}
+
+toolbarButtonBackgroundStyle:
+  normalImage:
+    file: anjian
+    image: IMG1
+  highlightImage:
+    file: anjian
+    image: IMG1
+  targetScale:   
+    x: 1
+    y: 0.85
+  center:
+    y: 0.58
+
+primaryButtonForegroundStyle:
+  normalImage:
+    file: cand
+    image: IMG1
+  highlightImage:
+    file: cand2
+    image: IMG1
+  targetScale: *toolbarButton_targetScale
+  #systemImageName: slider.horizontal.3
+  #<<: *vtltb
+
+toolbarButton1Style:
+  backgroundStyle: toolbarButton1BackgroundStyle
+  foregroundStyle: toolbarButton1ForegroundStyle
+  action: dismissKeyboard
+
+toolbarButton1BackgroundStyle:
+  normalImage:
+    file: anjian
+    image: IMG1
+  highlightImage:
+    file: anjian
+    image: IMG1
+  targetScale:   
+    x: 0.94
+    y: 0.85
+  center:
+    x: 0.47
+    y: 0.58
+
+toolbarButton1ForegroundStyle:
+  normalImage:
+    file: cand
+    image: IMG2
+  highlightImage:
+    file: cand2
+    image: IMG2
+  targetScale: 0.9
+  center:
+    x: 0.45
+  #systemImageName: chevron.down
+  #<<: *vtltb
+
+toolbarButton2Style:
+  backgroundStyle: toolbarButton2BackgroundStyle
+  foregroundStyle: toolbarButton2ForegroundStyle
+  action: {shortcutCommand: '#RimeSwitcher'}
+
+toolbarButton2BackgroundStyle:
+  normalImage:
+    file: anjian
+    image: IMG8
+  highlightImage:
+    file: anjian
+    image: IMG8
+  targetScale:   
+    x: 1
+    y: 0.85
+  center:
+    y: 0.58
+
+toolbarButton2ForegroundStyle:
+  normalImage:
+    file: RimeSwitcher
+    image: IMG1
+  highlightImage:
+    file: RimeSwitcher
+    image: IMG1
+  targetScale: *toolbarButton_targetScale1
+  #systemImageName: command
+  #<<: *vtltb
+
+toolbarButton3Style:
+  backgroundStyle: toolbarButton3BackgroundStyle
+  foregroundStyle: toolbarButton3ForegroundStyle
+  action: {shortcutCommand: '#showPasteboardView'}
+
+toolbarButton3BackgroundStyle:
+  normalImage:
+    file: anjian
+    image: IMG1
+  highlightImage:
+    file: anjian
+    image: IMG1
+  targetScale:   
+    x: 1.5
+    y: 0.85
+  center:
+    x: 0.75
+    y: 0.58
+
+toolbarButton3ForegroundStyle:
+  normalImage:
+    file: cand
+    image: IMG9
+  highlightImage:
+    file: cand
+    image: IMG9
+  targetScale: 1.5
+  center:
+    x: 0.93
+
+toolbarButton6Style:
+  backgroundStyle: toolbarButtonBackgroundStyle
+  foregroundStyle: toolbarButton6ForegroundStyle
+  action: {shortcutCommand: '#showPasteboardView'}
+
+
+toolbarButton4Style:
+  backgroundStyle: toolbarButtonBackgroundStyle
+  foregroundStyle: toolbarButton4ForegroundStyle
+  action: {shortcutCommand: '#showPhraseView'}
+
+toolbarButton4ForegroundStyle:
+  normalImage:
+    file: showPhraseView
+    image: IMG1
+  highlightImage:
+    file: showPhraseView
+    image: IMG1
+  targetScale: *toolbarButton_targetScale1
+  #systemImageName: paperclip
+  #<<: *vtltb
+
+toolbarButton5Style:
+  backgroundStyle: toolbarButtonBackgroundStyle
+  foregroundStyle: toolbarButton5ForegroundStyle
+  action: {runTranslateScript: 智谱翻译}
+#  action: {shortcutCommand: '#toggleScriptView'}
+
+toolbarButton5ForegroundStyle:
+  normalImage:
+    file: 智谱翻译
+    image: IMG1
+  highlightImage:
+    file: 智谱翻译
+    image: IMG1
+  targetScale: *toolbarButton_targetScale1
+  #systemImageName: apple.terminal
+  #<<: *vtltb
+
+toolbarButton7Style:
+  backgroundStyle: toolbarButtonBackgroundStyle
+  foregroundStyle: toolbarButton7ForegroundStyle
+  action: {floatKeyboardType: floatsearch}
+
+toolbarButton7ForegroundStyle:
+  normalImage:
+    file: floatsearch
+    image: IMG1
+  highlightImage:
+    file: floatsearch
+    image: IMG1
+  targetScale: *toolbarButton_targetScale1
+  #systemImageName: magnifyingglass
+  #<<: *vtltb
+
+horizontalCandidateStyle:
+  insets: {left: 10, top: 5, bottom: 5}
+  candidateStateButtonStyle: candidateStateButtonStyle
+  highlightBackgroundColor: 00000000
+  preferredBackgroundColor: 00000000
+  preferredIndexColor: 428675
+  preferredTextColor: 428675
+  preferredCommentColor: 428675
+  indexColor: F0ffffff
+  textColor: F0ffffff
+  commentColor: F0ffffff
+  indexFontSize: *FontSize_hpxh
+  textFontSize: *FontSize_hpwz
+  commentFontSize: *FontSize_hpvu
+
+candidateStateButtonStyle:
+  backgroundStyle: toolbarButtonBackgroundStyle
+  foregroundStyle: candidateStateButtonForegroundStyle
+
+candidateStateButtonForegroundStyle:
+  normalImage:
+    file: cand
+    image: IMG3
+  highlightImage:
+    file: cand2
+    image: IMG3
+verticalCandidateStyle:
+  insets: {top: 8, bottom: 0, left: 5, right: 5}
+  bottomRowHeight: 53
+  backgroundStyle: verticalCandidateBackgroundStyle
+  candidateStyle: verticalCandidateOfCandidateStyle
+  pageUpButtonStyle: verticalCandidatePageUpButtonStyle
+  pageDownButtonStyle: verticalCandidatePageDownButtonStyle
+  returnButtonStyle: verticalCandidateReturnButtonStyle
+  backspaceButtonStyle: verticalCandidateBackspaceButtonStyle
+
+verticalCandidateBackgroundStyle:
+  normalImage:
+    file: bj
+    image: IMG2
+
+verticalCandidateOfCandidateStyle:
+  insets: {top: 3, bottom: 3, left: 2, right: 2}
+  cornerRadius: 15
+  backgroundColor: 00000000
+  separatorColor: 00000000
+  highlightBackgroundColor: 00000000
+  preferredBackgroundColor: 00000000
+  preferredIndexColor: f2f2f2
+  preferredTextColor: f2f2f2
+  preferredCommentColor: f2f2f2
+  indexColor: f2f2f2
+  textColor: f2f2f2
+  commentColor: f2f2f2
+  indexFontSize: *FontSize_xlxh
+  textFontSize: *FontSize_xlwz
+  commentFontSize: *FontSize_xlvu
+
+verticalCandidatePageUpButtonStyle:
+  backgroundStyle: verticalCandidatePageUpButtonBackgroundStyle
+  foregroundStyle: verticalCandidatePageUpButtonForegroundStyle
+
+verticalCandidatePageUpButtonBackgroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: anjian
+    image: IMG7
+  highlightImage:
+    file: anjian
+    image: IMG8
+  targetScale: 1
+
+verticalCandidatePageUpButtonForegroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: sym
+    image: IMG2
+  highlightImage:
+    file: sym2
+    image: IMG2
+  #systemImageName: arrowtriangle.up.fill
+  <<: *xlan
+
+verticalCandidatePageDownButtonStyle:
+  backgroundStyle: verticalCandidatePageDownButtonBackgroundStyle
+  foregroundStyle: verticalCandidatePageDownButtonForegroundStyle
+
+verticalCandidatePageDownButtonBackgroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: anjian
+    image: IMG7
+  highlightImage:
+    file: anjian
+    image: IMG8
+  targetScale: 1
+
+verticalCandidatePageDownButtonForegroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: sym
+    image: IMG3
+  highlightImage:
+    file: sym2
+    image: IMG3
+  #systemImageName: arrowtriangle.down.fill
+  <<: *xlan
+
+verticalCandidateReturnButtonStyle:
+  backgroundStyle: verticalCandidateReturnButtonBackgroundStyle
+  foregroundStyle: verticalCandidateReturnButtonForegroundStyle
+
+verticalCandidateReturnButtonBackgroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: anjian
+    image: IMG7
+  highlightImage:
+    file: anjian
+    image: IMG8
+  targetScale: 1
+
+verticalCandidateReturnButtonForegroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: sym
+    image: IMG1
+  highlightImage:
+    file: sym2
+    image: IMG1
+  #systemImageName: arrowshape.turn.up.left.fill
+  <<: *xlan
+
+verticalCandidateBackspaceButtonStyle:
+  backgroundStyle: verticalCandidateBackspaceButtonBackgroundStyle
+  foregroundStyle: verticalCandidateBackspaceButtonForegroundStyle
+
+verticalCandidateBackspaceButtonBackgroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: anjian
+    image: IMG7
+  highlightImage:
+    file: anjian
+    image: IMG8
+  targetScale: 1
+
+verticalCandidateBackspaceButtonForegroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: sym
+    image: IMG10
+  highlightImage:
+    file: sym2
+    image: IMG10
+  #systemImageName: delete.left.fill
+  <<: *xlan
+
+# 键盘
+keyboard:
+  style: keyboardStyle
+  subviews:
+  - HStack:
+      subviews:
+      - Cell: qButton
+      - Cell: wButton
+      - Cell: eButton
+      - Cell: rButton
+      - Cell: tButton
+      - Cell: yButton
+      - Cell: uButton
+      - Cell: iButton
+      - Cell: oButton
+      - Cell: pButton
+  - HStack:
+      subviews:
+      - Cell: aButton
+      - Cell: sButton
+      - Cell: dButton
+      - Cell: fButton
+      - Cell: gButton
+      - Cell: hButton
+      - Cell: jButton
+      - Cell: kButton
+      - Cell: lButton
+  - HStack:
+      subviews:
+      - Cell: shiftButton
+      - Cell: zButton
+      - Cell: xButton
+      - Cell: cButton
+      - Cell: vButton
+      - Cell: bButton
+      - Cell: nButton
+      - Cell: mButton
+      - Cell: backspaceButton
+  - HStack:
+      subviews:
+      - Cell: symButton
+      - Cell: 123Button
+      - Cell: puncButton
+      - Cell: spaceButton
+      - Cell: cnenButton
+      - Cell: enterButton
+
+keyboardStyle:
+  insets: {top: 8, bottom: 0, left: 5, right: 5}
+  backgroundStyle: keyboardBackgroundStyle
+
+keyboardBackgroundStyle:
+  normalImage:
+    file: bj
+    image: IMG2
+
+qButton:
+  size:
+    width:
+      percentage: 0.1
+    height:
+      percentage: 1
+  backgroundStyle: qButtonBackgroundStyle
+  foregroundStyle:
+  - qButtonForegroundStyle
+  - qButtonForegroundStyle1
+  - qButtonUpForegroundStyle
+  - qButtonDownForegroundStyle
+  uppercasedStateForegroundStyle:
+  - qButtonUppercasedStateForegroundStyle
+  - qButtonUppercasedStateForegroundStyle1
+  - qButtonUpForegroundStyle
+  - qButtonDownForegroundStyle
+  capsLockedStateForegroundStyle:
+  - qButtonUppercasedStateForegroundStyle
+  - qButtonUppercasedStateForegroundStyle1
+  - qButtonUpForegroundStyle
+  - qButtonDownForegroundStyle
+  hintStyle: qButtonHintStyle
+  # 长按符号列表
+  holdSymbolsStyle: qButtonHoldSymbolsStyle
+  action: {symbol: q}
+  uppercasedStateAction: {symbol: Q}
+  swipeUpAction: {symbol: 1}
+  swipeDownAction: {symbol: '`'}
+
+qButtonBackgroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: anjian
+    image: IMG1
+  highlightImage:
+    file: anjian
+    image: IMG2
+
+qButtonForegroundStyle:
+  animation: alphabeticForegroundAnimation
+  normalImage:
+    file: letter
+    image: IMG27
+  highlightImage:
+    file: letter_p
+    image: IMG27
+  <<: *26zf
+
+qButtonForegroundStyle1:
+  text: Q
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+qButtonUppercasedStateForegroundStyle:
+  animation: alphabeticForegroundAnimation
+  normalImage:
+    file: letter
+    image: IMG1
+  highlightImage:
+    file: letter_p
+    image: IMG1
+  <<: *26zf
+
+qButtonUppercasedStateForegroundStyle1:
+  text: Q
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+qButtonUpForegroundStyle:
+  text: 1
+  <<: *uhzf
+
+qButtonDownForegroundStyle:
+  text: '`'
+  <<: *xhzf
+
+qButtonHintStyle:
+  backgroundStyle: alphabeticHintBackgroundStyle
+  foregroundStyle: qButtonHintForegroundStyle
+  swipeUpForegroundStyle: qButtonSwipeUpHintForegroundStyle
+
+qButtonHintForegroundStyle:
+  text: Q
+  <<: *axqp
+
+qButtonSwipeUpHintForegroundStyle:
+  text: 1
+  <<: *uhqp
+
+qButtonHoldSymbolsStyle:
+  #insets: { top: 3, bottom: 3, left: 2, right: 2 }
+  backgroundStyle: alphabeticHoldSymbolsBackgroundStyle
+  foregroundStyle:
+  - qButtonHoldSymbolsOfForegroundStyle0
+  - qButtonHoldSymbolsOfForegroundStyle1
+  - qButtonHoldSymbolsOfForegroundStyle2
+  actions:
+  - {symbol: 壹}
+  - {symbol: Q}
+  - {symbol: q}
+  selectedStyle: alphabeticHoldSymbolsSelectedStyle
+  selectedIndex: 0
+
+qButtonHoldSymbolsOfForegroundStyle0:
+  text: 壹
+  <<: *iaqp
+
+qButtonHoldSymbolsOfForegroundStyle1:
+  text: Q
+  <<: *iaqp
+
+qButtonHoldSymbolsOfForegroundStyle2:
+  text: q
+  <<: *iaqp
+
+wButton:
+  size:
+    width:
+      percentage: 0.1
+    height:
+      percentage: 1
+  backgroundStyle: wButtonBackgroundStyle
+  foregroundStyle:
+  - wButtonForegroundStyle
+  - wButtonForegroundStyle1
+  - wButtonUpForegroundStyle
+  - wButtonDownForegroundStyle
+  uppercasedStateForegroundStyle:
+  - wButtonUppercasedStateForegroundStyle
+  - wButtonUppercasedStateForegroundStyle1
+  - wButtonUpForegroundStyle
+  - wButtonDownForegroundStyle
+  capsLockedStateForegroundStyle:
+  - wButtonUppercasedStateForegroundStyle
+  - wButtonUppercasedStateForegroundStyle1
+  - wButtonUpForegroundStyle
+  - wButtonDownForegroundStyle
+  hintStyle: wButtonHintStyle
+  action: {symbol: w}
+  uppercasedStateAction: {symbol: W}
+  swipeUpAction: {symbol: 2}
+  swipeDownAction: {symbol: '|'}
+  holdSymbolsStyle: wButtonHoldSymbolsStyle
+
+wButtonBackgroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: anjian
+    image: IMG1
+  highlightImage:
+    file: anjian
+    image: IMG2
+
+wButtonForegroundStyle:
+  animation: alphabeticForegroundAnimation
+  normalImage:
+    file: letter
+    image: IMG28
+  highlightImage:
+    file: letter_p
+    image: IMG28
+  <<: *26zf
+
+wButtonForegroundStyle1:
+  text: W
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+wButtonUppercasedStateForegroundStyle:
+  animation: alphabeticForegroundAnimation
+  normalImage:
+    file: letter
+    image: IMG2
+  highlightImage:
+    file: letter_p
+    image: IMG2
+  <<: *26zf
+
+wButtonUppercasedStateForegroundStyle1:
+  text: W
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+wButtonUpForegroundStyle:
+  text: 2
+  <<: *uhzf
+
+wButtonDownForegroundStyle:
+  text: '|'
+  <<: *xhzf
+
+wButtonHintStyle:
+  backgroundStyle: alphabeticHintBackgroundStyle
+  foregroundStyle: wButtonHintForegroundStyle
+  swipeUpForegroundStyle: wButtonSwipeUpHintForegroundStyle
+
+wButtonHintForegroundStyle:
+  text: W
+  <<: *axqp
+
+wButtonSwipeUpHintForegroundStyle:
+  text: 2
+  <<: *uhqp
+
+wButtonHoldSymbolsStyle:
+  backgroundStyle: alphabeticHoldSymbolsBackgroundStyle
+  foregroundStyle:
+  - wButtonHoldSymbolsOfForegroundStyle0
+  - wButtonHoldSymbolsOfForegroundStyle1
+  - wButtonHoldSymbolsOfForegroundStyle2
+  actions:
+  - {symbol: w}
+  - {symbol: 贰}
+  - {symbol: W}
+  selectedStyle: alphabeticHoldSymbolsSelectedStyle
+  selectedIndex: 1
+
+wButtonHoldSymbolsOfForegroundStyle0:
+  text: w
+  <<: *iaqp
+
+wButtonHoldSymbolsOfForegroundStyle1:
+  text: 贰
+  <<: *iaqp
+
+wButtonHoldSymbolsOfForegroundStyle2:
+  text: W
+  <<: *iaqp
+
+eButton:
+  size:
+    width:
+      percentage: 0.1
+    height:
+      percentage: 1
+  backgroundStyle: eButtonBackgroundStyle
+  foregroundStyle:
+  - eButtonForegroundStyle
+  - eButtonForegroundStyle1
+  - eButtonUpForegroundStyle
+  - eButtonDownForegroundStyle
+  uppercasedStateForegroundStyle:
+  - eButtonUppercasedStateForegroundStyle
+  - eButtonUppercasedStateForegroundStyle1
+  - eButtonUpForegroundStyle
+  - eButtonDownForegroundStyle
+  capsLockedStateForegroundStyle:
+  - eButtonUppercasedStateForegroundStyle
+  - eButtonUppercasedStateForegroundStyle1
+  - eButtonUpForegroundStyle
+  - eButtonDownForegroundStyle
+  hintStyle: eButtonHintStyle
+  action: {symbol: e}
+  uppercasedStateAction: {symbol: E}
+  swipeUpAction: {symbol: 3}
+  swipeDownAction: {symbol: '{'}
+  holdSymbolsStyle: eButtonHoldSymbolsStyle
+
+eButtonBackgroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: anjian
+    image: IMG1
+  highlightImage:
+    file: anjian
+    image: IMG2
+
+eButtonForegroundStyle:
+  animation: alphabeticForegroundAnimation
+  normalImage:
+    file: letter
+    image: IMG29
+  highlightImage:
+    file: letter_p
+    image: IMG29
+  <<: *26zf
+
+eButtonForegroundStyle1:
+  text: E
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+eButtonUppercasedStateForegroundStyle:
+  animation: alphabeticForegroundAnimation
+  normalImage:
+    file: letter
+    image: IMG3
+  highlightImage:
+    file: letter_p
+    image: IMG3
+  <<: *26zf
+
+eButtonUppercasedStateForegroundStyle1:
+  text: E
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+eButtonUpForegroundStyle:
+  text: 3
+  <<: *uhzf
+
+eButtonDownForegroundStyle:
+  text: '{'
+  <<: *xhzf
+
+eButtonHintStyle:
+  backgroundStyle: alphabeticHintBackgroundStyle
+  foregroundStyle: eButtonHintForegroundStyle
+  swipeUpForegroundStyle: eButtonSwipeUpHintForegroundStyle
+
+eButtonHintForegroundStyle:
+  text: E
+  <<: *axqp
+
+eButtonSwipeUpHintForegroundStyle:
+  text: 3
+  <<: *uhqp
+
+eButtonHoldSymbolsStyle:
+  backgroundStyle: alphabeticHoldSymbolsBackgroundStyle
+  foregroundStyle:
+  - eButtonHoldSymbolsForegroundStyle0
+  - eButtonHoldSymbolsForegroundStyle1
+  - eButtonHoldSymbolsForegroundStyle2
+  actions:
+  - {symbol: e}
+  - {symbol: 叁}
+  - {symbol: E}
+  selectedStyle: alphabeticHoldSymbolsSelectedStyle
+  selectedIndex: 1
+
+eButtonHoldSymbolsForegroundStyle0:
+  text: e
+  <<: *iaqp
+
+eButtonHoldSymbolsForegroundStyle1:
+  text: 叁
+  <<: *iaqp
+
+eButtonHoldSymbolsForegroundStyle2:
+  text: E
+  <<: *iaqp
+
+rButton:
+  size:
+    width:
+      percentage: 0.1
+    height:
+      percentage: 1
+  backgroundStyle: rButtonBackgroundStyle
+  foregroundStyle:
+  - rButtonForegroundStyle
+  - rButtonForegroundStyle1
+  - rButtonUpForegroundStyle
+  - rButtonDownForegroundStyle
+  uppercasedStateForegroundStyle:
+  - rButtonUppercasedStateForegroundStyle
+  - rButtonUppercasedStateForegroundStyle1
+  - rButtonUpForegroundStyle
+  - rButtonDownForegroundStyle
+  capsLockedStateForegroundStyle:
+  - rButtonUppercasedStateForegroundStyle
+  - rButtonUppercasedStateForegroundStyle1
+  - rButtonUpForegroundStyle
+  - rButtonDownForegroundStyle
+  hintStyle: rButtonHintStyle
+  action: {symbol: r}
+  uppercasedStateAction: {symbol: R}
+  swipeUpAction: {symbol: 4}
+  swipeDownAction: {symbol: '}'}
+  holdSymbolsStyle: rButtonHoldSymbolsStyle
+
+rButtonBackgroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: anjian
+    image: IMG1
+  highlightImage:
+    file: anjian
+    image: IMG2
+
+rButtonForegroundStyle:
+  animation: alphabeticForegroundAnimation
+  normalImage:
+    file: letter
+    image: IMG30
+  highlightImage:
+    file: letter_p
+    image: IMG30
+  <<: *26zf
+
+rButtonForegroundStyle1:
+  text: R
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+rButtonUppercasedStateForegroundStyle:
+  animation: alphabeticForegroundAnimation
+  normalImage:
+    file: letter
+    image: IMG4
+  highlightImage:
+    file: letter_p
+    image: IMG4
+  <<: *26zf
+
+rButtonUppercasedStateForegroundStyle1:
+  text: R
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+rButtonUpForegroundStyle:
+  text: 4
+  <<: *uhzf
+
+rButtonDownForegroundStyle:
+  text: '}'
+  <<: *xhzf
+
+rButtonHintStyle:
+  backgroundStyle: alphabeticHintBackgroundStyle
+  foregroundStyle: rButtonHintForegroundStyle
+  swipeUpForegroundStyle: rButtonSwipeUpHintForegroundStyle
+
+rButtonHintForegroundStyle:
+  text: R
+  <<: *axqp
+
+rButtonSwipeUpHintForegroundStyle:
+  text: 6
+  <<: *uhqp
+
+rButtonHoldSymbolsStyle:
+  backgroundStyle: alphabeticHoldSymbolsBackgroundStyle
+  foregroundStyle:
+  - rButtonHoldSymbolsForegroundStyle0
+  - rButtonHoldSymbolsForegroundStyle1
+  - rButtonHoldSymbolsForegroundStyle2
+  actions:
+  - {symbol: r}
+  - {symbol: 肆}
+  - {symbol: R}
+  selectedStyle: alphabeticHoldSymbolsSelectedStyle
+  selectedIndex: 1
+
+rButtonHoldSymbolsForegroundStyle0:
+  text: r
+  <<: *iaqp
+
+rButtonHoldSymbolsForegroundStyle1:
+  text: 肆
+  <<: *iaqp
+
+rButtonHoldSymbolsForegroundStyle2:
+  text: R
+  <<: *iaqp
+
+tButton:
+  size:
+    width:
+      percentage: 0.1
+    height:
+      percentage: 1
+  backgroundStyle: tButtonBackgroundStyle
+  foregroundStyle:
+  - tButtonForegroundStyle
+  - tButtonForegroundStyle1
+  - tButtonUpForegroundStyle
+  - tButtonDownForegroundStyle
+  uppercasedStateForegroundStyle:
+  - tButtonUppercasedStateForegroundStyle
+  - tButtonUppercasedStateForegroundStyle1
+  - tButtonUpForegroundStyle
+  - tButtonDownForegroundStyle
+  capsLockedStateForegroundStyle:
+  - tButtonUppercasedStateForegroundStyle
+  - tButtonUppercasedStateForegroundStyle1
+  - tButtonUpForegroundStyle
+  - tButtonDownForegroundStyle
+  hintStyle: tButtonHintStyle
+  action: {symbol: t}
+  uppercasedStateAction: {symbol: T}
+  swipeUpAction: {symbol: 5}
+  swipeDownAction: {symbol: '['}
+  holdSymbolsStyle: tButtonHoldSymbolsStyle
+
+tButtonBackgroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: anjian
+    image: IMG1
+  highlightImage:
+    file: anjian
+    image: IMG2
+
+tButtonForegroundStyle:
+  animation: alphabeticForegroundAnimation
+  normalImage:
+    file: letter
+    image: IMG31
+  highlightImage:
+    file: letter_p
+    image: IMG31
+  <<: *26zf
+
+tButtonForegroundStyle1:
+  text: T
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+tButtonUppercasedStateForegroundStyle:
+  animation: alphabeticForegroundAnimation
+  normalImage:
+    file: letter
+    image: IMG5
+  highlightImage:
+    file: letter_p
+    image: IMG5
+  <<: *26zf
+
+tButtonUppercasedStateForegroundStyle1:
+  text: T
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+tButtonUpForegroundStyle:
+  text: 5
+  <<: *uhzf
+
+tButtonDownForegroundStyle:
+  text: '['
+  <<: *xhzf
+
+tButtonHintStyle:
+  backgroundStyle: alphabeticHintBackgroundStyle
+  foregroundStyle: tButtonHintForegroundStyle
+  swipeUpForegroundStyle: tButtonSwipeUpHintForegroundStyle
+
+tButtonHintForegroundStyle:
+  text: T
+  <<: *axqp
+
+tButtonSwipeUpHintForegroundStyle:
+  text: 5
+  <<: *uhqp
+
+tButtonHoldSymbolsStyle:
+  backgroundStyle: alphabeticHoldSymbolsBackgroundStyle
+  foregroundStyle:
+  - tButtonHoldSymbolsForegroundStyle0
+  - tButtonHoldSymbolsForegroundStyle1
+  - tButtonHoldSymbolsForegroundStyle2
+  actions:
+  - {symbol: t}
+  - {symbol: 伍}
+  - {symbol: T}
+  selectedStyle: alphabeticHoldSymbolsSelectedStyle
+  selectedIndex: 1
+
+tButtonHoldSymbolsForegroundStyle0:
+  text: t
+  <<: *iaqp
+
+tButtonHoldSymbolsForegroundStyle1:
+  text: 伍
+  <<: *iaqp
+
+tButtonHoldSymbolsForegroundStyle2:
+  text: T
+  <<: *iaqp
+
+yButton:
+  size:
+    width:
+      percentage: 0.1
+    height:
+      percentage: 1
+  backgroundStyle: yButtonBackgroundStyle
+  foregroundStyle:
+  - yButtonForegroundStyle
+  - yButtonForegroundStyle1
+  - yButtonUpForegroundStyle
+  - yButtonDownForegroundStyle
+  uppercasedStateForegroundStyle:
+  - yButtonUppercasedStateForegroundStyle
+  - yButtonUppercasedStateForegroundStyle1
+  - yButtonUpForegroundStyle
+  - yButtonDownForegroundStyle
+  capsLockedStateForegroundStyle:
+  - yButtonUppercasedStateForegroundStyle
+  - yButtonUppercasedStateForegroundStyle1
+  - yButtonUpForegroundStyle
+  - yButtonDownForegroundStyle
+  hintStyle: yButtonHintStyle
+  action: {symbol: y}
+  uppercasedStateAction: {symbol: Y}
+  swipeUpAction: {symbol: 6}
+  swipeDownAction: {symbol: ']'}
+  holdSymbolsStyle: yButtonHoldSymbolsStyle
+
+yButtonBackgroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: anjian
+    image: IMG1
+  highlightImage:
+    file: anjian
+    image: IMG2
+
+yButtonForegroundStyle:
+  animation: alphabeticForegroundAnimation
+  normalImage:
+    file: letter
+    image: IMG32
+  highlightImage:
+    file: letter_p
+    image: IMG32
+  <<: *26zf
+
+yButtonForegroundStyle1:
+  text: Y
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+yButtonUppercasedStateForegroundStyle:
+  animation: alphabeticForegroundAnimation
+  normalImage:
+    file: letter
+    image: IMG6
+  highlightImage:
+    file: letter_p
+    image: IMG6
+  <<: *26zf
+
+yButtonUppercasedStateForegroundStyle1:
+  text: Y
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+yButtonUpForegroundStyle:
+  text: 6
+  <<: *uhzf
+
+yButtonDownForegroundStyle:
+  text: ']'
+  <<: *xhzf
+
+yButtonHintStyle:
+  backgroundStyle: alphabeticHintBackgroundStyle
+  foregroundStyle: yButtonHintForegroundStyle
+  swipeUpForegroundStyle: yButtonSwipeUpHintForegroundStyle
+
+yButtonHintForegroundStyle:
+  text: Y
+  <<: *axqp
+
+yButtonSwipeUpHintForegroundStyle:
+  text: 6
+  <<: *uhqp
+
+yButtonHoldSymbolsStyle:
+  backgroundStyle: alphabeticHoldSymbolsBackgroundStyle
+  foregroundStyle:
+  - yButtonHoldSymbolsForegroundStyle0
+  - yButtonHoldSymbolsForegroundStyle1
+  - yButtonHoldSymbolsForegroundStyle2
+  actions:
+  - {symbol: y}
+  - {symbol: 陆}
+  - {symbol: Y}
+  selectedStyle: alphabeticHoldSymbolsSelectedStyle
+  selectedIndex: 1
+
+yButtonHoldSymbolsForegroundStyle0:
+  text: y
+  <<: *iaqp
+
+yButtonHoldSymbolsForegroundStyle1:
+  text: 陆
+  <<: *iaqp
+
+yButtonHoldSymbolsForegroundStyle2:
+  text: Y
+  <<: *iaqp
+
+uButton:
+  size:
+    width:
+      percentage: 0.1
+    height:
+      percentage: 1
+  backgroundStyle: uButtonBackgroundStyle
+  foregroundStyle:
+  - uButtonForegroundStyle
+  - uButtonForegroundStyle1
+  - uButtonUpForegroundStyle
+  - uButtonDownForegroundStyle
+  uppercasedStateForegroundStyle:
+  - uButtonUppercasedStateForegroundStyle
+  - uButtonUppercasedStateForegroundStyle1
+  - uButtonUpForegroundStyle
+  - uButtonDownForegroundStyle
+  capsLockedStateForegroundStyle:
+  - uButtonUppercasedStateForegroundStyle
+  - uButtonUppercasedStateForegroundStyle1
+  - uButtonUpForegroundStyle
+  - uButtonDownForegroundStyle
+  hintStyle: uButtonHintStyle
+  action: {symbol: u}
+  uppercasedStateAction: {symbol: U}
+  swipeUpAction: {symbol: 7}
+  swipeDownAction: {symbol: ^}
+  holdSymbolsStyle: uButtonHoldSymbolsStyle
+
+uButtonBackgroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: anjian
+    image: IMG1
+  highlightImage:
+    file: anjian
+    image: IMG2
+
+uButtonForegroundStyle:
+  animation: alphabeticForegroundAnimation
+  normalImage:
+    file: letter
+    image: IMG33
+  highlightImage:
+    file: letter_p
+    image: IMG33
+  <<: *26zf
+
+uButtonForegroundStyle1:
+  text: U
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+uButtonUppercasedStateForegroundStyle:
+  animation: alphabeticForegroundAnimation
+  normalImage:
+    file: letter
+    image: IMG7
+  highlightImage:
+    file: letter_p
+    image: IMG7
+  <<: *26zf
+
+uButtonUppercasedStateForegroundStyle1:
+  text: U
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+uButtonUpForegroundStyle:
+  text: 7
+  <<: *uhzf
+
+uButtonDownForegroundStyle:
+  text: ^
+  <<: *xhzf
+
+uButtonHintStyle:
+  backgroundStyle: alphabeticHintBackgroundStyle
+  foregroundStyle: uButtonHintForegroundStyle
+  swipeUpForegroundStyle: uButtonSwipeUpHintForegroundStyle
+
+uButtonHintForegroundStyle:
+  text: U
+  <<: *axqp
+
+uButtonSwipeUpHintForegroundStyle:
+  text: 7
+  <<: *uhqp
+
+uButtonHoldSymbolsStyle:
+  backgroundStyle: alphabeticHoldSymbolsBackgroundStyle
+  foregroundStyle:
+  - uButtonHoldSymbolsForegroundStyle0
+  - uButtonHoldSymbolsForegroundStyle1
+  - uButtonHoldSymbolsForegroundStyle2
+  actions:
+  - {symbol: u}
+  - {symbol: 柒}
+  - {symbol: U}
+  selectedStyle: alphabeticHoldSymbolsSelectedStyle
+  selectedIndex: 1
+
+uButtonHoldSymbolsForegroundStyle0:
+  text: u
+  <<: *iaqp
+
+uButtonHoldSymbolsForegroundStyle1:
+  text: 柒
+  <<: *iaqp
+
+uButtonHoldSymbolsForegroundStyle2:
+  text: U
+  <<: *iaqp
+
+iButton:
+  size:
+    width:
+      percentage: 0.1
+    height:
+      percentage: 1
+  backgroundStyle: iButtonBackgroundStyle
+  foregroundStyle:
+  - iButtonForegroundStyle
+  - iButtonForegroundStyle1
+  - iButtonUpForegroundStyle
+  - iButtonDownForegroundStyle
+  uppercasedStateForegroundStyle:
+  - iButtonUppercasedStateForegroundStyle
+  - iButtonUppercasedStateForegroundStyle1
+  - iButtonUpForegroundStyle
+  - iButtonDownForegroundStyle
+  capsLockedStateForegroundStyle:
+  - iButtonUppercasedStateForegroundStyle
+  - iButtonUppercasedStateForegroundStyle1
+  - iButtonUpForegroundStyle
+  - iButtonDownForegroundStyle
+  hintStyle: iButtonHintStyle
+  action: {symbol: i}
+  uppercasedStateAction: {symbol: I}
+  swipeUpAction: {symbol: 8}
+  swipeDownAction: {symbol: '&'}
+  holdSymbolsStyle: iButtonHoldSymbolsStyle
+
+iButtonBackgroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: anjian
+    image: IMG1
+  highlightImage:
+    file: anjian
+    image: IMG2
+
+iButtonForegroundStyle:
+  animation: alphabeticForegroundAnimation
+  normalImage:
+    file: letter
+    image: IMG34
+  highlightImage:
+    file: letter_p
+    image: IMG34
+  <<: *26zf
+
+iButtonForegroundStyle1:
+  text: I
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+iButtonUppercasedStateForegroundStyle:
+  animation: alphabeticForegroundAnimation
+  normalImage:
+    file: letter
+    image: IMG8
+  highlightImage:
+    file: letter_p
+    image: IMG8
+  <<: *26zf
+
+iButtonUppercasedStateForegroundStyle1:
+  text: I
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+iButtonUpForegroundStyle:
+  text: 8
+  <<: *uhzf
+
+iButtonDownForegroundStyle:
+  text: '&'
+  <<: *xhzf
+
+iButtonHintStyle:
+  backgroundStyle: alphabeticHintBackgroundStyle
+  foregroundStyle: iButtonHintForegroundStyle
+  swipeUpForegroundStyle: iButtonSwipeUpHintForegroundStyle
+
+iButtonHintForegroundStyle:
+  text: I
+  <<: *axqp
+
+iButtonSwipeUpHintForegroundStyle:
+  text: 8
+  <<: *uhqp
+
+iButtonHoldSymbolsStyle:
+  backgroundStyle: alphabeticHoldSymbolsBackgroundStyle
+  foregroundStyle:
+  - iButtonHoldSymbolsForegroundStyle0
+  - iButtonHoldSymbolsForegroundStyle1
+  - iButtonHoldSymbolsForegroundStyle2
+  actions:
+  - {symbol: i}
+  - {symbol: 捌}
+  - {symbol: I}
+  selectedStyle: alphabeticHoldSymbolsSelectedStyle
+  selectedIndex: 1
+
+iButtonHoldSymbolsForegroundStyle0:
+  text: i
+  <<: *iaqp
+
+iButtonHoldSymbolsForegroundStyle1:
+  text: 捌
+  <<: *iaqp
+
+iButtonHoldSymbolsForegroundStyle2:
+  text: I
+  <<: *iaqp
+
+oButton:
+  size:
+    width:
+      percentage: 0.1
+    height:
+      percentage: 1
+  backgroundStyle: oButtonBackgroundStyle
+  foregroundStyle:
+  - oButtonForegroundStyle
+  - oButtonForegroundStyle1
+  - oButtonUpForegroundStyle
+  - oButtonDownForegroundStyle
+  uppercasedStateForegroundStyle:
+  - oButtonUppercasedStateForegroundStyle
+  - oButtonUppercasedStateForegroundStyle1
+  - oButtonUpForegroundStyle
+  - oButtonDownForegroundStyle
+  capsLockedStateForegroundStyle:
+  - oButtonUppercasedStateForegroundStyle
+  - oButtonUppercasedStateForegroundStyle1
+  - oButtonUpForegroundStyle
+  - oButtonDownForegroundStyle
+  hintStyle: oButtonHintStyle
+  action: {symbol: o}
+  uppercasedStateAction: {symbol: O}
+  swipeUpAction: {symbol: 9}
+  swipeDownAction: {symbol: '*'}
+  holdSymbolsStyle: oButtonHoldSymbolsStyle
+
+oButtonBackgroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: anjian
+    image: IMG1
+  highlightImage:
+    file: anjian
+    image: IMG2
+
+oButtonForegroundStyle:
+  animation: alphabeticForegroundAnimation
+  normalImage:
+    file: letter
+    image: IMG35
+  highlightImage:
+    file: letter_p
+    image: IMG35
+  <<: *26zf
+
+oButtonForegroundStyle1:
+  text: O
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+oButtonUppercasedStateForegroundStyle:
+  animation: alphabeticForegroundAnimation
+  normalImage:
+    file: letter
+    image: IMG9
+  highlightImage:
+    file: letter_p
+    image: IMG9
+  <<: *26zf
+
+oButtonUppercasedStateForegroundStyle1:
+  text: O
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+oButtonUpForegroundStyle:
+  text: 9
+  <<: *uhzf
+
+oButtonDownForegroundStyle:
+  text: '*'
+  <<: *xhzf
+
+oButtonHintStyle:
+  backgroundStyle: alphabeticHintBackgroundStyle
+  foregroundStyle: oButtonHintForegroundStyle
+  swipeUpForegroundStyle: oButtonSwipeUpHintForegroundStyle
+
+oButtonHintForegroundStyle:
+  text: O
+  <<: *axqp
+
+oButtonSwipeUpHintForegroundStyle:
+  text: 9
+  <<: *uhqp
+
+oButtonHoldSymbolsStyle:
+  backgroundStyle: alphabeticHoldSymbolsBackgroundStyle
+  foregroundStyle:
+  - oButtonHoldSymbolsForegroundStyle0
+  - oButtonHoldSymbolsForegroundStyle1
+  - oButtonHoldSymbolsForegroundStyle2
+  actions:
+  - {symbol: o}
+  - {symbol: 玖}
+  - {symbol: O}
+  selectedStyle: alphabeticHoldSymbolsSelectedStyle
+  selectedIndex: 1
+
+oButtonHoldSymbolsForegroundStyle0:
+  text: o
+  <<: *iaqp
+
+oButtonHoldSymbolsForegroundStyle1:
+  text: 玖
+  <<: *iaqp
+
+oButtonHoldSymbolsForegroundStyle2:
+  text: O
+  <<: *iaqp
+
+pButton:
+  size:
+    width:
+      percentage: 0.1
+    height:
+      percentage: 1
+  backgroundStyle: pButtonBackgroundStyle
+  foregroundStyle:
+  - pButtonForegroundStyle
+  - pButtonForegroundStyle1
+  - pButtonUpForegroundStyle
+  - pButtonDownForegroundStyle
+  uppercasedStateForegroundStyle:
+  - pButtonUppercasedStateForegroundStyle
+  - pButtonUppercasedStateForegroundStyle1
+  - pButtonUpForegroundStyle
+  - pButtonDownForegroundStyle
+  capsLockedStateForegroundStyle:
+  - pButtonUppercasedStateForegroundStyle
+  - pButtonUppercasedStateForegroundStyle1
+  - pButtonUpForegroundStyle
+  - pButtonDownForegroundStyle
+  hintStyle: pButtonHintStyle
+  action: {symbol: p}
+  uppercasedStateAction: {symbol: P}
+  swipeUpAction: {symbol: 0}
+  swipeDownAction: {symbol: '%'}
+  holdSymbolsStyle: pButtonHoldSymbolsStyle
+
+pButtonBackgroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: anjian
+    image: IMG1
+  highlightImage:
+    file: anjian
+    image: IMG2
+
+pButtonForegroundStyle:
+  animation: alphabeticForegroundAnimation
+  normalImage:
+    file: letter
+    image: IMG36
+  highlightImage:
+    file: letter_p
+    image: IMG36
+  <<: *26zf
+
+pButtonForegroundStyle1:
+  text: P
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+pButtonUppercasedStateForegroundStyle:
+  animation: alphabeticForegroundAnimation
+  normalImage:
+    file: letter
+    image: IMG10
+  highlightImage:
+    file: letter_p
+    image: IMG10
+  <<: *26zf
+
+pButtonUppercasedStateForegroundStyle1:
+  text: P
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+pButtonUpForegroundStyle:
+  text: 0
+  <<: *uhzf
+
+pButtonDownForegroundStyle:
+  text: '%'
+  <<: *xhzf
+
+pButtonHintStyle:
+  backgroundStyle: alphabeticHintBackgroundStyle
+  foregroundStyle: pButtonHintForegroundStyle
+  swipeUpForegroundStyle: pButtonSwipeUpHintForegroundStyle
+
+pButtonHintForegroundStyle:
+  text: P
+  <<: *axqp
+
+pButtonSwipeUpHintForegroundStyle:
+  text: 0
+  <<: *uhqp
+
+pButtonHoldSymbolsStyle:
+  # 长按符号列表内距
+  #  insets: { top: 3, bottom: 3, left: 8, right: 8 }
+  backgroundStyle: alphabeticHoldSymbolsBackgroundStyle
+  foregroundStyle:
+  - pButtonHoldSymbolsOfForegroundStyle0
+  - pButtonHoldSymbolsOfForegroundStyle1
+  - pButtonHoldSymbolsOfForegroundStyle2
+  actions:
+  - {symbol: p}
+  - {symbol: P}
+  - {symbol: 零}
+  selectedStyle: alphabeticHoldSymbolsSelectedStyle
+  selectedIndex: 2
+
+pButtonHoldSymbolsOfForegroundStyle0:
+  text: p
+  <<: *iaqp
+
+pButtonHoldSymbolsOfForegroundStyle1:
+  text: P
+  <<: *iaqp
+
+pButtonHoldSymbolsOfForegroundStyle2:
+  text: 零
+  <<: *iaqp
+
+aButton:
+  size:
+    width:
+      percentage: 0.15
+    height:
+      percentage: 1
+  bounds:
+    width: 2/3
+    height:
+      percentage: 1
+    alignment: right
+  backgroundStyle: aButtonBackgroundStyle
+  foregroundStyle:
+  - aButtonForegroundStyle
+  - aButtonForegroundStyle1
+  - aButtonUpForegroundStyle
+  - aButtonDownForegroundStyle
+  uppercasedStateForegroundStyle:
+  - aButtonUppercasedStateForegroundStyle
+  - aButtonUppercasedStateForegroundStyle1
+  - aButtonUpForegroundStyle
+  - aButtonDownForegroundStyle
+  capsLockedStateForegroundStyle:
+  - aButtonUppercasedStateForegroundStyle
+  - aButtonUppercasedStateForegroundStyle1
+  - aButtonUpForegroundStyle
+  - aButtonDownForegroundStyle
+  hintStyle: aButtonHintStyle
+  action: {symbol: a}
+  uppercasedStateAction: {symbol: A}
+  swipeUpAction: {symbol: '~'}
+  swipeDownAction: {symbol: '='}
+  holdSymbolsStyle: aButtonHoldSymbolsStyle
+
+aButtonBackgroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: anjian
+    image: IMG1
+  highlightImage:
+    file: anjian
+    image: IMG2
+
+aButtonForegroundStyle:
+  animation: alphabeticForegroundAnimation
+  normalImage:
+    file: letter
+    image: IMG37
+  highlightImage:
+    file: letter_p
+    image: IMG37
+  <<: *26zf
+
+aButtonForegroundStyle1:
+  text: A
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+aButtonUppercasedStateForegroundStyle:
+  animation: alphabeticForegroundAnimation
+  normalImage:
+    file: letter
+    image: IMG11
+  highlightImage:
+    file: letter_p
+    image: IMG11
+  <<: *26zf
+
+aButtonUppercasedStateForegroundStyle1:
+  text: A
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+aButtonUpForegroundStyle:
+  text: '~'
+  <<: *uhzf
+
+aButtonDownForegroundStyle:
+  text: '='
+  <<: *xhzf
+
+aButtonHintStyle:
+  backgroundStyle: alphabeticHintBackgroundStyle
+  foregroundStyle: aButtonHintForegroundStyle
+  swipeUpForegroundStyle: aButtonSwipeUpHintForegroundStyle
+
+aButtonHintForegroundStyle:
+  text: A
+  <<: *axqp
+
+aButtonSwipeUpHintForegroundStyle:
+  text: '~'
+  <<: *uhqp
+
+aButtonHoldSymbolsStyle:
+  backgroundStyle: alphabeticHoldSymbolsBackgroundStyle
+  foregroundStyle:
+  - aButtonHoldSymbolsForegroundStyle0
+  - aButtonHoldSymbolsForegroundStyle1
+  actions:
+  - {symbol: '~'}
+  - {symbol: ……}
+  selectedStyle: alphabeticHoldSymbolsSelectedStyle
+  selectedIndex: 0
+
+aButtonHoldSymbolsForegroundStyle0:
+  text: '~'
+  <<: *iaqp
+
+aButtonHoldSymbolsForegroundStyle1:
+  text: ……
+  <<: *iaqp
+
+sButton:
+  size:
+    width:
+      percentage: 0.1
+    height:
+      percentage: 1
+  backgroundStyle: sButtonBackgroundStyle
+  foregroundStyle:
+  - sButtonForegroundStyle
+  - sButtonForegroundStyle1
+  - sButtonUpForegroundStyle
+  - sButtonDownForegroundStyle
+  uppercasedStateForegroundStyle:
+  - sButtonUppercasedStateForegroundStyle
+  - sButtonUppercasedStateForegroundStyle1
+  - sButtonUpForegroundStyle
+  - sButtonDownForegroundStyle
+  capsLockedStateForegroundStyle:
+  - sButtonUppercasedStateForegroundStyle
+  - sButtonUppercasedStateForegroundStyle1
+  - sButtonUpForegroundStyle
+  - sButtonDownForegroundStyle
+  hintStyle: sButtonHintStyle
+  action: {symbol: s}
+  uppercasedStateAction: {symbol: S}
+  swipeUpAction: {symbol: /}
+  swipeDownAction: {symbol: \}
+  holdSymbolsStyle: sButtonHoldSymbolsStyle
+
+sButtonBackgroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: anjian
+    image: IMG1
+  highlightImage:
+    file: anjian
+    image: IMG2
+
+sButtonForegroundStyle:
+  animation: alphabeticForegroundAnimation
+  normalImage:
+    file: letter
+    image: IMG38
+  highlightImage:
+    file: letter_p
+    image: IMG38
+  <<: *26zf
+
+sButtonForegroundStyle1:
+  text: S
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+sButtonUppercasedStateForegroundStyle:
+  animation: alphabeticForegroundAnimation
+  normalImage:
+    file: letter
+    image: IMG12
+  highlightImage:
+    file: letter_p
+    image: IMG12
+  <<: *26zf
+
+sButtonUppercasedStateForegroundStyle1:
+  text: S
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+sButtonUpForegroundStyle:
+  text: /
+  <<: *uhzf
+
+sButtonDownForegroundStyle:
+  text: \
+  <<: *xhzf
+
+sButtonHintStyle:
+  backgroundStyle: alphabeticHintBackgroundStyle
+  foregroundStyle: sButtonHintForegroundStyle
+  swipeUpForegroundStyle: sButtonSwipeUpHintForegroundStyle
+
+sButtonHintForegroundStyle:
+  text: S
+  <<: *axqp
+
+sButtonSwipeUpHintForegroundStyle:
+  text: /
+  <<: *uhqp
+
+sButtonHoldSymbolsStyle:
+  backgroundStyle: alphabeticHoldSymbolsBackgroundStyle
+  foregroundStyle:
+  - sButtonHoldSymbolsForegroundStyle0
+  - sButtonHoldSymbolsForegroundStyle1
+  - sButtonHoldSymbolsForegroundStyle2
+  actions:
+  - {symbol: \n}
+  - {symbol: /}
+  - {symbol: \t}
+  selectedStyle: alphabeticHoldSymbolsSelectedStyle
+  selectedIndex: 1
+
+sButtonHoldSymbolsForegroundStyle0:
+  text: \n
+  <<: *iaqp
+
+sButtonHoldSymbolsForegroundStyle1:
+  text: /
+  <<: *iaqp
+
+sButtonHoldSymbolsForegroundStyle2:
+  text: \t
+  <<: *iaqp
+
+dButton:
+  size:
+    width:
+      percentage: 0.1
+    height:
+      percentage: 1
+  backgroundStyle: dButtonBackgroundStyle
+  foregroundStyle:
+  - dButtonForegroundStyle
+  - dButtonForegroundStyle1
+  - dButtonUpForegroundStyle
+  - dButtonDownForegroundStyle
+  uppercasedStateForegroundStyle:
+  - dButtonUppercasedStateForegroundStyle
+  - dButtonUppercasedStateForegroundStyle1
+  - dButtonUpForegroundStyle
+  - dButtonDownForegroundStyle
+  capsLockedStateForegroundStyle:
+  - dButtonUppercasedStateForegroundStyle
+  - dButtonUppercasedStateForegroundStyle1
+  - dButtonUpForegroundStyle
+  - dButtonDownForegroundStyle
+  hintStyle: dButtonHintStyle
+  action: {symbol: d}
+  uppercasedStateAction: {symbol: D}
+  swipeUpAction: {symbol: ':'}
+  swipeDownAction: {symbol: 、}
+  holdSymbolsStyle: dButtonHoldSymbolsStyle
+
+dButtonBackgroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: anjian
+    image: IMG1
+  highlightImage:
+    file: anjian
+    image: IMG2
+
+dButtonForegroundStyle:
+  animation: alphabeticForegroundAnimation
+  normalImage:
+    file: letter
+    image: IMG39
+  highlightImage:
+    file: letter_p
+    image: IMG39
+  <<: *26zf
+
+dButtonForegroundStyle1:
+  text: D
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+dButtonUppercasedStateForegroundStyle:
+  animation: alphabeticForegroundAnimation
+  normalImage:
+    file: letter
+    image: IMG13
+  highlightImage:
+    file: letter_p
+    image: IMG13
+  <<: *26zf
+
+dButtonUppercasedStateForegroundStyle1:
+  text: D
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+dButtonUpForegroundStyle:
+  text: ':'
+  <<: *uhzf
+
+dButtonDownForegroundStyle:
+  text: 、
+  <<: *xhzf
+
+dButtonHintStyle:
+  backgroundStyle: alphabeticHintBackgroundStyle
+  foregroundStyle: dButtonHintForegroundStyle
+  swipeUpForegroundStyle: dButtonSwipeUpHintForegroundStyle
+
+dButtonHintForegroundStyle:
+  text: D
+  <<: *axqp
+
+dButtonSwipeUpHintForegroundStyle:
+  text: ':'
+  <<: *uhqp
+
+dButtonHoldSymbolsStyle:
+  # 长按符号列表内距
+  #  insets: { top: 3, bottom: 3, left: 8, right: 8 }
+  backgroundStyle: alphabeticHoldSymbolsBackgroundStyle
+  foregroundStyle:
+  - dButtonHoldSymbolsOfForegroundStyle0
+  - dButtonHoldSymbolsOfForegroundStyle1
+  - dButtonHoldSymbolsOfForegroundStyle2
+  actions:
+  - {sendKeys: /time}
+  - {symbol: ':'}
+  - {sendKeys: /date}
+  selectedStyle: alphabeticHoldSymbolsSelectedStyle
+  selectedIndex: 1
+
+dButtonHoldSymbolsOfForegroundStyle0:
+  text: ⏰
+  <<: *iaqp
+
+dButtonHoldSymbolsOfForegroundStyle1:
+  text: ':'
+  <<: *iaqp
+
+dButtonHoldSymbolsOfForegroundStyle2:
+  text: 🗓
+  <<: *iaqp
+
+fButton:
+  size:
+    width:
+      percentage: 0.1
+    height:
+      percentage: 1
+  backgroundStyle: fButtonBackgroundStyle
+  foregroundStyle:
+  - fButtonForegroundStyle
+  - fButtonForegroundStyle1
+  - fButtonUpForegroundStyle
+  - fButtonDownForegroundStyle
+  uppercasedStateForegroundStyle:
+  - fButtonUppercasedStateForegroundStyle
+  - fButtonUppercasedStateForegroundStyle1
+  - fButtonUpForegroundStyle
+  - fButtonDownForegroundStyle
+  capsLockedStateForegroundStyle:
+  - fButtonUppercasedStateForegroundStyle
+  - fButtonUppercasedStateForegroundStyle1
+  - fButtonUpForegroundStyle
+  - fButtonDownForegroundStyle
+  hintStyle: fButtonHintStyle
+  action: {symbol: f}
+  uppercasedStateAction: {symbol: F}
+  swipeUpAction: {symbol: ;}
+  swipeDownAction: {symbol: +}
+  holdSymbolsStyle: fButtonHoldSymbolsStyle
+
+fButtonBackgroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: anjian
+    image: IMG1
+  highlightImage:
+    file: anjian
+    image: IMG2
+
+fButtonForegroundStyle:
+  animation: alphabeticForegroundAnimation
+  normalImage:
+    file: letter
+    image: IMG40
+  highlightImage:
+    file: letter_p
+    image: IMG40
+  <<: *26zf
+
+fButtonForegroundStyle1:
+  text: F
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+fButtonUppercasedStateForegroundStyle:
+  animation: alphabeticForegroundAnimation
+  normalImage:
+    file: letter
+    image: IMG14
+  highlightImage:
+    file: letter_p
+    image: IMG14
+  <<: *26zf
+
+fButtonUppercasedStateForegroundStyle1:
+  text: F
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+fButtonUpForegroundStyle:
+  text: ;
+  <<: *uhzf
+
+fButtonDownForegroundStyle:
+  text: +
+  <<: *xhzf
+
+fButtonHintStyle:
+  backgroundStyle: alphabeticHintBackgroundStyle
+  foregroundStyle: fButtonHintForegroundStyle
+  swipeUpForegroundStyle: fButtonSwipeUpHintForegroundStyle
+
+fButtonHintForegroundStyle:
+  text: F
+  <<: *axqp
+
+fButtonSwipeUpHintForegroundStyle:
+  text: ;
+  <<: *uhqp
+
+fButtonHoldSymbolsStyle:
+  backgroundStyle: alphabeticHoldSymbolsBackgroundStyle
+  foregroundStyle:
+  - fButtonHoldSymbolsForegroundStyle0
+  actions:
+  - {symbol: ;}
+  selectedStyle: alphabeticHoldSymbolsSelectedStyle
+  selectedIndex: 0
+
+fButtonHoldSymbolsForegroundStyle0:
+  text: ;
+  <<: *iaqp
+
+gButton:
+  size:
+    width:
+      percentage: 0.1
+    height:
+      percentage: 1
+  backgroundStyle: gButtonBackgroundStyle
+  foregroundStyle:
+  - gButtonForegroundStyle
+  - gButtonForegroundStyle1
+  - gButtonUpForegroundStyle
+  - gButtonDownForegroundStyle
+  uppercasedStateForegroundStyle:
+  - gButtonUppercasedStateForegroundStyle
+  - gButtonUppercasedStateForegroundStyle1
+  - gButtonUpForegroundStyle
+  - gButtonDownForegroundStyle
+  capsLockedStateForegroundStyle:
+  - gButtonUppercasedStateForegroundStyle
+  - gButtonUppercasedStateForegroundStyle1
+  - gButtonUpForegroundStyle
+  - gButtonDownForegroundStyle
+  hintStyle: gButtonHintStyle
+  action: {symbol: g}
+  uppercasedStateAction: {symbol: G}
+  swipeUpAction: {symbol: (}
+  swipeDownAction: {symbol: <}
+  holdSymbolsStyle: gButtonHoldSymbolsStyle
+
+gButtonBackgroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: anjian
+    image: IMG1
+  highlightImage:
+    file: anjian
+    image: IMG2
+
+gButtonForegroundStyle:
+  animation: alphabeticForegroundAnimation
+  normalImage:
+    file: letter
+    image: IMG41
+  highlightImage:
+    file: letter_p
+    image: IMG41
+  <<: *26zf
+
+gButtonForegroundStyle1:
+  text: G
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+gButtonUppercasedStateForegroundStyle:
+  animation: alphabeticForegroundAnimation
+  normalImage:
+    file: letter
+    image: IMG15
+  highlightImage:
+    file: letter_p
+    image: IMG15
+  <<: *26zf
+
+gButtonUppercasedStateForegroundStyle1:
+  text: G
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+gButtonUpForegroundStyle:
+  text: (
+  <<: *uhzf
+
+gButtonDownForegroundStyle:
+  text: <
+  <<: *xhzf
+
+gButtonHintStyle:
+  backgroundStyle: alphabeticHintBackgroundStyle
+  foregroundStyle: gButtonHintForegroundStyle
+  swipeUpForegroundStyle: gButtonSwipeUpHintForegroundStyle
+
+gButtonHintForegroundStyle:
+  text: G
+  <<: *axqp
+
+gButtonSwipeUpHintForegroundStyle:
+  text: (
+  <<: *uhqp
+
+gButtonHoldSymbolsStyle:
+  backgroundStyle: alphabeticHoldSymbolsBackgroundStyle
+  foregroundStyle:
+  - gButtonHoldSymbolsForegroundStyle0
+  - gButtonHoldSymbolsForegroundStyle1
+  - gButtonHoldSymbolsForegroundStyle2
+  actions:
+  - {symbol: <}
+  - {symbol: (}
+  - {symbol: '['}
+  selectedStyle: alphabeticHoldSymbolsSelectedStyle
+  selectedIndex: 1
+
+gButtonHoldSymbolsForegroundStyle0:
+  text: <
+  <<: *iaqp
+
+gButtonHoldSymbolsForegroundStyle1:
+  text: (
+  <<: *iaqp
+
+gButtonHoldSymbolsForegroundStyle2:
+  text: '['
+  <<: *iaqp
+
+hButton:
+  size:
+    width:
+      percentage: 0.1
+    height:
+      percentage: 1
+  backgroundStyle: hButtonBackgroundStyle
+  foregroundStyle:
+  - hButtonForegroundStyle
+  - hButtonForegroundStyle1
+  - hButtonUpForegroundStyle
+  - hButtonDownForegroundStyle
+  uppercasedStateForegroundStyle:
+  - hButtonUppercasedStateForegroundStyle
+  - hButtonUppercasedStateForegroundStyle1
+  - hButtonUpForegroundStyle
+  - hButtonDownForegroundStyle
+  capsLockedStateForegroundStyle:
+  - hButtonUppercasedStateForegroundStyle
+  - hButtonUppercasedStateForegroundStyle1
+  - hButtonUpForegroundStyle
+  - hButtonDownForegroundStyle
+  hintStyle: hButtonHintStyle
+  action: {symbol: h}
+  uppercasedStateAction: {symbol: H}
+  swipeUpAction: {symbol: )}
+  swipeDownAction: {symbol: '>'}
+  holdSymbolsStyle: hButtonHoldSymbolsStyle
+
+hButtonBackgroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: anjian
+    image: IMG1
+  highlightImage:
+    file: anjian
+    image: IMG2
+
+hButtonForegroundStyle:
+  animation: alphabeticForegroundAnimation
+  normalImage:
+    file: letter
+    image: IMG42
+  highlightImage:
+    file: letter_p
+    image: IMG42
+  <<: *26zf
+
+hButtonForegroundStyle1:
+  text: H
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+hButtonUppercasedStateForegroundStyle:
+  animation: alphabeticForegroundAnimation
+  normalImage:
+    file: letter
+    image: IMG16
+  highlightImage:
+    file: letter_p
+    image: IMG16
+  <<: *26zf
+
+hButtonUppercasedStateForegroundStyle1:
+  text: H
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+hButtonUpForegroundStyle:
+  text: )
+  <<: *uhzf
+
+hButtonDownForegroundStyle:
+  text: '>'
+  <<: *xhzf
+
+hButtonHintStyle:
+  backgroundStyle: alphabeticHintBackgroundStyle
+  foregroundStyle: hButtonHintForegroundStyle
+  swipeUpForegroundStyle: hButtonSwipeUpHintForegroundStyle
+
+hButtonHintForegroundStyle:
+  text: H
+  <<: *axqp
+
+hButtonSwipeUpHintForegroundStyle:
+  text: )
+  <<: *uhqp
+
+hButtonHoldSymbolsStyle:
+  backgroundStyle: alphabeticHoldSymbolsBackgroundStyle
+  foregroundStyle:
+  - hButtonHoldSymbolsForegroundStyle0
+  - hButtonHoldSymbolsForegroundStyle1
+  - hButtonHoldSymbolsForegroundStyle2
+  actions:
+  - {symbol: '>'}
+  - {symbol: )}
+  - {symbol: ']'}
+  selectedStyle: alphabeticHoldSymbolsSelectedStyle
+  selectedIndex: 1
+
+hButtonHoldSymbolsForegroundStyle0:
+  text: '>'
+  <<: *iaqp
+
+hButtonHoldSymbolsForegroundStyle1:
+  text: )
+  <<: *iaqp
+
+hButtonHoldSymbolsForegroundStyle2:
+  text: ']'
+  <<: *iaqp
+
+jButton:
+  size:
+    width:
+      percentage: 0.1
+    height:
+      percentage: 1
+  backgroundStyle: jButtonBackgroundStyle
+  foregroundStyle:
+  - jButtonForegroundStyle
+  - jButtonForegroundStyle1
+  - jButtonUpForegroundStyle
+  - jButtonDownForegroundStyle
+  uppercasedStateForegroundStyle:
+  - jButtonUppercasedStateForegroundStyle
+  - jButtonUppercasedStateForegroundStyle1
+  - jButtonUpForegroundStyle
+  - jButtonDownForegroundStyle
+  capsLockedStateForegroundStyle:
+  - jButtonUppercasedStateForegroundStyle
+  - jButtonUppercasedStateForegroundStyle1
+  - jButtonUpForegroundStyle
+  - jButtonDownForegroundStyle
+  hintStyle: jButtonHintStyle
+  action: {symbol: j}
+  uppercasedStateAction: {symbol: J}
+  swipeUpAction: {symbol: '@'}
+  swipeDownAction: {symbol: $}
+  holdSymbolsStyle: jButtonHoldSymbolsStyle
+
+jButtonBackgroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: anjian
+    image: IMG1
+  highlightImage:
+    file: anjian
+    image: IMG2
+
+jButtonForegroundStyle:
+  animation: alphabeticForegroundAnimation
+  normalImage:
+    file: letter
+    image: IMG43
+  highlightImage:
+    file: letter_p
+    image: IMG43
+  <<: *26zf
+
+jButtonForegroundStyle1:
+  text: J
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+jButtonUppercasedStateForegroundStyle:
+  animation: alphabeticForegroundAnimation
+  normalImage:
+    file: letter
+    image: IMG17
+  highlightImage:
+    file: letter_p
+    image: IMG17
+  <<: *26zf
+
+jButtonUppercasedStateForegroundStyle1:
+  text: J
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+jButtonUpForegroundStyle:
+  text: '@'
+  <<: *uhzf
+
+jButtonDownForegroundStyle:
+  text: $
+  <<: *xhzf
+
+jButtonHintStyle:
+  backgroundStyle: alphabeticHintBackgroundStyle
+  foregroundStyle: jButtonHintForegroundStyle
+  swipeUpForegroundStyle: jButtonSwipeUpHintForegroundStyle
+
+jButtonHintForegroundStyle:
+  text: J
+  <<: *axqp
+
+jButtonSwipeUpHintForegroundStyle:
+  text: '@'
+  <<: *uhqp
+
+jButtonHoldSymbolsStyle:
+  backgroundStyle: alphabeticHoldSymbolsBackgroundStyle
+  foregroundStyle:
+  - jButtonHoldSymbolsForegroundStyle0
+  - jButtonHoldSymbolsForegroundStyle1
+  - jButtonHoldSymbolsForegroundStyle2
+  actions:
+  - {symbol: $}
+  - {symbol: '@'}
+  - {symbol: €}
+  selectedStyle: alphabeticHoldSymbolsSelectedStyle
+  selectedIndex: 1
+
+jButtonHoldSymbolsForegroundStyle0:
+  text: $
+  <<: *iaqp
+
+jButtonHoldSymbolsForegroundStyle1:
+  text: '@'
+  <<: *iaqp
+
+jButtonHoldSymbolsForegroundStyle2:
+  text: €
+  <<: *iaqp
+
+kButton:
+  size:
+    width:
+      percentage: 0.1
+    height:
+      percentage: 1
+  backgroundStyle: kButtonBackgroundStyle
+  foregroundStyle:
+  - kButtonForegroundStyle
+  - kButtonForegroundStyle1
+  - kButtonUpForegroundStyle
+  - kButtonDownForegroundStyle
+  uppercasedStateForegroundStyle:
+  - kButtonUppercasedStateForegroundStyle
+  - kButtonUppercasedStateForegroundStyle1
+  - kButtonUpForegroundStyle
+  - kButtonDownForegroundStyle
+  capsLockedStateForegroundStyle:
+  - kButtonUppercasedStateForegroundStyle
+  - kButtonUppercasedStateForegroundStyle1
+  - kButtonUpForegroundStyle
+  - kButtonDownForegroundStyle
+  hintStyle: kButtonHintStyle
+  action: {symbol: k}
+  uppercasedStateAction: {symbol: K}
+  swipeUpAction: {symbol: '"'}
+  swipeDownAction: {symbol: '"'}
+  holdSymbolsStyle: kButtonHoldSymbolsStyle
+
+kButtonBackgroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: anjian
+    image: IMG1
+  highlightImage:
+    file: anjian
+    image: IMG2
+
+kButtonForegroundStyle:
+  animation: alphabeticForegroundAnimation
+  normalImage:
+    file: letter
+    image: IMG44
+  highlightImage:
+    file: letter_p
+    image: IMG44
+  <<: *26zf
+
+kButtonForegroundStyle1:
+  text: K
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+kButtonUppercasedStateForegroundStyle:
+  animation: alphabeticForegroundAnimation
+  normalImage:
+    file: letter
+    image: IMG18
+  highlightImage:
+    file: letter_p
+    image: IMG18
+  <<: *26zf
+
+kButtonUppercasedStateForegroundStyle1:
+  text: K
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+kButtonUpForegroundStyle:
+  text: “
+  <<: *uhzf
+
+kButtonDownForegroundStyle:
+  text: '"'
+  <<: *xhzf
+
+kButtonHintStyle:
+  backgroundStyle: alphabeticHintBackgroundStyle
+  foregroundStyle: kButtonHintForegroundStyle
+  swipeUpForegroundStyle: kButtonSwipeUpHintForegroundStyle
+
+kButtonHintForegroundStyle:
+  text: K
+  <<: *axqp
+
+kButtonSwipeUpHintForegroundStyle:
+  text: '"'
+  <<: *uhqp
+
+kButtonHoldSymbolsStyle:
+  backgroundStyle: alphabeticHoldSymbolsBackgroundStyle
+  foregroundStyle:
+  - kButtonHoldSymbolsForegroundStyle0
+  - kButtonHoldSymbolsForegroundStyle1
+  - kButtonHoldSymbolsForegroundStyle2
+  actions:
+  - {symbol: 「}
+  - {symbol: '"'}
+  - {symbol: 『}
+  selectedStyle: alphabeticHoldSymbolsSelectedStyle
+  selectedIndex: 1
+
+kButtonHoldSymbolsForegroundStyle0:
+  text: 「
+  <<: *iaqp
+
+kButtonHoldSymbolsForegroundStyle1:
+  text: '"'
+  <<: *iaqp
+
+kButtonHoldSymbolsForegroundStyle2:
+  text: 『
+  <<: *iaqp
+
+lButton:
+  size:
+    width:
+      percentage: 0.15
+    height:
+      percentage: 1
+  bounds:
+    width: 2/3
+    height:
+      percentage: 1
+    alignment: left
+  backgroundStyle: lButtonBackgroundStyle
+  foregroundStyle:
+  - lButtonForegroundStyle
+  - lButtonForegroundStyle1
+  - lButtonUpForegroundStyle
+  - lButtonDownForegroundStyle
+  uppercasedStateForegroundStyle:
+  - lButtonUppercasedStateForegroundStyle
+  - lButtonUppercasedStateForegroundStyle1
+  - lButtonUpForegroundStyle
+  - lButtonDownForegroundStyle
+  capsLockedStateForegroundStyle:
+  - lButtonUppercasedStateForegroundStyle
+  - lButtonUppercasedStateForegroundStyle1
+  - lButtonUpForegroundStyle
+  - lButtonDownForegroundStyle
+  hintStyle: lButtonHintStyle
+  action: {symbol: l}
+  uppercasedStateAction: {symbol: L}
+  swipeUpAction: {symbol: '"'}
+  swipeDownAction: {symbol: "'"}
+  holdSymbolsStyle: lButtonHoldSymbolsStyle
+
+lButtonBackgroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: anjian
+    image: IMG1
+  highlightImage:
+    file: anjian
+    image: IMG2
+
+lButtonForegroundStyle:
+  animation: alphabeticForegroundAnimation
+  normalImage:
+    file: letter
+    image: IMG45
+  highlightImage:
+    file: letter_p
+    image: IMG45
+  <<: *26zf
+
+lButtonForegroundStyle1:
+  text: L
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+lButtonUppercasedStateForegroundStyle:
+  animation: alphabeticForegroundAnimation
+  normalImage:
+    file: letter
+    image: IMG19
+  highlightImage:
+    file: letter_p
+    image: IMG19
+  <<: *26zf
+
+lButtonUppercasedStateForegroundStyle1:
+  text: L
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+lButtonUpForegroundStyle:
+  text: ”
+  <<: *uhzf
+
+lButtonDownForegroundStyle:
+  text: "'"
+  <<: *xhzf
+
+lButtonHintStyle:
+  backgroundStyle: alphabeticHintBackgroundStyle
+  foregroundStyle: lButtonHintForegroundStyle
+  swipeUpForegroundStyle: lButtonSwipeUpHintForegroundStyle
+
+lButtonHintForegroundStyle:
+  text: L
+  <<: *axqp
+
+lButtonSwipeUpHintForegroundStyle:
+  text: '"'
+  <<: *uhqp
+
+lButtonHoldSymbolsStyle:
+  backgroundStyle: alphabeticHoldSymbolsBackgroundStyle
+  foregroundStyle:
+  - lButtonHoldSymbolsForegroundStyle0
+  - lButtonHoldSymbolsForegroundStyle1
+  - lButtonHoldSymbolsForegroundStyle2
+  actions:
+  - {symbol: 」}
+  - {symbol: 』}
+  - {symbol: "'"}
+  selectedStyle: alphabeticHoldSymbolsSelectedStyle
+  selectedIndex: 2
+
+lButtonHoldSymbolsForegroundStyle0:
+  text: 」
+  <<: *iaqp
+
+lButtonHoldSymbolsForegroundStyle1:
+  text: 』
+  <<: *iaqp
+
+lButtonHoldSymbolsForegroundStyle2:
+  text: "'"
+  <<: *iaqp
+
+shiftButton:
+  size:
+    width:
+      percentage: 0.15
+    height:
+      percentage: 1
+  backgroundStyle: shiftButtonBackgroundStyle
+  foregroundStyle: shiftButtonForegroundStyle
+  uppercasedStateForegroundStyle: shiftButtonUppercasedForegroundStyle
+  capsLockedStateForegroundStyle: shiftButtonCapsLockedForegroundStyle
+  action: shift
+  swipeUpAction: tab
+  swipeDownAction: {shortcutCommand: '#capsLocked'}
+
+shiftButtonBackgroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: anjian
+    image: IMG3
+  highlightImage:
+    file: anjian
+    image: IMG4
+
+shiftButtonForegroundStyle:
+  animation: systemForegroundAnimation
+  normalImage:
+    file: more
+    image: IMG6
+  highlightImage:
+    file: more2
+    image: IMG6
+  <<: *shift_qj
+
+shiftButtonUppercasedForegroundStyle:
+  animation: systemForegroundAnimation
+  normalImage:
+    file: more
+    image: IMG7
+  highlightImage:
+    file: more2
+    image: IMG7
+  <<: *shift_qj
+
+shiftButtonCapsLockedForegroundStyle:
+  animation: systemForegroundAnimation
+  normalImage:
+    file: more
+    image: IMG8
+  highlightImage:
+    file: more2
+    image: IMG8
+  <<: *shift_qj
+
+shiftButtonPreeditForegroundStyle:
+  # text: "$inputSchemaName"
+  # text: "$candidate"
+  text: 分词
+  fontSize: 14
+  normalColor: '383838'
+  highlightColor: '383838'
+  center:
+    x: 0.5
+    y: 0.45
+
+zButton:
+  size:
+    width:
+      percentage: 0.1
+    height:
+      percentage: 1
+  backgroundStyle: zButtonBackgroundStyle
+  foregroundStyle:
+  - zButtonForegroundStyle
+  - zButtonForegroundStyle1
+  - zButtonUpForegroundStyle
+  - zButtonDownForegroundStyle
+  uppercasedStateForegroundStyle:
+  - zButtonUppercasedStateForegroundStyle
+  - zButtonUppercasedStateForegroundStyle1
+  - zButtonUpForegroundStyle
+  - zButtonDownForegroundStyle
+  capsLockedStateForegroundStyle:
+  - zButtonUppercasedStateForegroundStyle
+  - zButtonUppercasedStateForegroundStyle1
+  - zButtonUpForegroundStyle
+  - zButtonDownForegroundStyle
+  hintStyle: zButtonHintStyle
+  action: {symbol: z}
+  uppercasedStateAction: {symbol: Z}
+  swipeUpAction: {symbol: '-'}
+  swipeDownAction: {shortcutCommand: '#selectText'}
+  holdSymbolsStyle: zButtonHoldSymbolsStyle
+
+zButtonBackgroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: anjian
+    image: IMG1
+  highlightImage:
+    file: anjian
+    image: IMG2
+
+zButtonForegroundStyle:
+  animation: alphabeticForegroundAnimation1
+  normalImage:
+    file: letter
+    image: IMG46
+  highlightImage:
+    file: letter_p
+    image: IMG46
+  <<: *26zf
+
+zButtonForegroundStyle1:
+  text: Z
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+zButtonUppercasedStateForegroundStyle:
+  animation: alphabeticForegroundAnimation1
+  normalImage:
+    file: letter
+    image: IMG20
+  highlightImage:
+    file: letter_p
+    image: IMG20
+  <<: *26zf
+
+zButtonUppercasedStateForegroundStyle1:
+  text: Z
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+zButtonUpForegroundStyle:
+  text: '-'
+  <<: *uhzf
+
+zButtonDownForegroundStyle:
+  text: 全选
+  <<: *zxhzf
+
+zButtonHintStyle:
+  backgroundStyle: alphabeticHintBackgroundStyle
+  foregroundStyle: zButtonHintForegroundStyle
+  swipeUpForegroundStyle: zButtonSwipeUpHintForegroundStyle
+
+zButtonHintForegroundStyle:
+  text: Z
+  <<: *axqp
+
+zButtonSwipeUpHintForegroundStyle:
+  text: '-'
+  <<: *uhqp
+
+zButtonHoldSymbolsStyle:
+  backgroundStyle: alphabeticHoldSymbolsBackgroundStyle
+  foregroundStyle:
+  - zButtonHoldSymbolsForegroundStyle0
+  - zButtonHoldSymbolsForegroundStyle1
+  - zButtonHoldSymbolsForegroundStyle2
+  actions:
+  - {symbol: ´}
+  - {symbol: '-'}
+  - {symbol: '`'}
+  selectedStyle: alphabeticHoldSymbolsSelectedStyle
+  selectedIndex: 1
+
+zButtonHoldSymbolsForegroundStyle0:
+  text: ´
+  <<: *iaqp
+
+zButtonHoldSymbolsForegroundStyle1:
+  text: '-'
+  <<: *iaqp
+
+zButtonHoldSymbolsForegroundStyle2:
+  text: '`'
+  <<: *iaqp
+
+xButton:
+  size:
+    width:
+      percentage: 0.1
+    height:
+      percentage: 1
+  backgroundStyle: xButtonBackgroundStyle
+  foregroundStyle:
+  - xButtonForegroundStyle
+  - xButtonForegroundStyle1
+  - xButtonUpForegroundStyle
+  - xButtonDownForegroundStyle
+  uppercasedStateForegroundStyle:
+  - xButtonUppercasedStateForegroundStyle
+  - xButtonUppercasedStateForegroundStyle1
+  - xButtonUpForegroundStyle
+  - xButtonDownForegroundStyle
+  capsLockedStateForegroundStyle:
+  - xButtonUppercasedStateForegroundStyle
+  - xButtonUppercasedStateForegroundStyle1
+  - xButtonUpForegroundStyle
+  - xButtonDownForegroundStyle
+  hintStyle: xButtonHintStyle
+  action: {symbol: x}
+  uppercasedStateAction: {symbol: X}
+  swipeUpAction: {symbol: _}
+  swipeDownAction: {shortcutCommand: '#剪切'}
+  holdSymbolsStyle: xButtonHoldSymbolsStyle
+
+xButtonBackgroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: anjian
+    image: IMG1
+  highlightImage:
+    file: anjian
+    image: IMG2
+
+xButtonForegroundStyle:
+  animation: alphabeticForegroundAnimation1
+  normalImage:
+    file: letter
+    image: IMG47
+  highlightImage:
+    file: letter_p
+    image: IMG47
+  <<: *26zf
+
+xButtonForegroundStyle1:
+  text: X
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+xButtonUppercasedStateForegroundStyle:
+  animation: alphabeticForegroundAnimation1
+  normalImage:
+    file: letter
+    image: IMG21
+  highlightImage:
+    file: letter_p
+    image: IMG21
+  <<: *26zf
+
+xButtonUppercasedStateForegroundStyle1:
+  text: X
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+xButtonUpForegroundStyle:
+  text: _
+  <<: *uhzf
+
+xButtonDownForegroundStyle:
+  text: 剪切
+  <<: *zxhzf
+
+xButtonHintStyle:
+  backgroundStyle: alphabeticHintBackgroundStyle
+  foregroundStyle: xButtonHintForegroundStyle
+  swipeUpForegroundStyle: xButtonSwipeUpHintForegroundStyle
+
+xButtonHintForegroundStyle:
+  text: X
+  <<: *axqp
+
+xButtonSwipeUpHintForegroundStyle:
+  text: _
+  <<: *uhqp
+
+xButtonHoldSymbolsStyle:
+  backgroundStyle: alphabeticHoldSymbolsBackgroundStyle
+  foregroundStyle:
+  - xButtonHoldSymbolsForegroundStyle0
+  - xButtonHoldSymbolsForegroundStyle1
+  actions:
+  - {symbol: _}
+  - {symbol: ——}
+  selectedStyle: alphabeticHoldSymbolsSelectedStyle
+  selectedIndex: 0
+
+xButtonHoldSymbolsForegroundStyle0:
+  text: _
+  <<: *iaqp
+
+xButtonHoldSymbolsForegroundStyle1:
+  text: ——
+  <<: *iaqp
+
+cButton:
+  size:
+    width:
+      percentag: 0.1
+    height:
+      percentage: 1
+  backgroundStyle: cButtonBackgroundStyle
+  foregroundStyle:
+  - cButtonForegroundStyle
+  - cButtonForegroundStyle1
+  - cButtonUpForegroundStyle
+  - cButtonDownForegroundStyle
+  uppercasedStateForegroundStyle:
+  - cButtonUppercasedStateForegroundStyle
+  - cButtonUppercasedStateForegroundStyle1
+  - cButtonUpForegroundStyle
+  - cButtonDownForegroundStyle
+  capsLockedStateForegroundStyle:
+  - cButtonUppercasedStateForegroundStyle
+  - cButtonUppercasedStateForegroundStyle1
+  - cButtonUpForegroundStyle
+  - cButtonDownForegroundStyle
+  hintStyle: cButtonHintStyle
+  action: {symbol: c}
+  uppercasedStateAction: {symbol: C}
+  swipeUpAction: {symbol: '#'}
+  swipeDownAction: {shortcutCommand: '#复制'}
+  holdSymbolsStyle: cButtonHoldSymbolsStyle
+
+cButtonBackgroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: anjian
+    image: IMG1
+  highlightImage:
+    file: anjian
+    image: IMG2
+
+cButtonForegroundStyle:
+  animation: alphabeticForegroundAnimation1
+  normalImage:
+    file: letter
+    image: IMG48
+  highlightImage:
+    file: letter_p
+    image: IMG48
+  <<: *26zf
+
+cButtonForegroundStyle1:
+  text: C
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+cButtonUppercasedStateForegroundStyle:
+  animation: alphabeticForegroundAnimation1
+  normalImage:
+    file: letter
+    image: IMG22
+  highlightImage:
+    file: letter_p
+    image: IMG22
+  <<: *26zf
+
+cButtonUppercasedStateForegroundStyle1:
+  text: C
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+cButtonUpForegroundStyle:
+  text: '#'
+  <<: *uhzf
+
+cButtonDownForegroundStyle:
+  text: 复制
+  <<: *zxhzf
+
+cButtonHintStyle:
+  backgroundStyle: alphabeticHintBackgroundStyle
+  foregroundStyle: cButtonHintForegroundStyle
+  swipeUpForegroundStyle: cButtonSwipeUpHintForegroundStyle
+
+cButtonHintForegroundStyle:
+  text: C
+  <<: *axqp
+
+cButtonSwipeUpHintForegroundStyle:
+  text: '#'
+  <<: *uhqp
+
+cButtonHoldSymbolsStyle:
+  backgroundStyle: alphabeticHoldSymbolsBackgroundStyle
+  foregroundStyle:
+  - cButtonHoldSymbolsForegroundStyle0
+  - cButtonHoldSymbolsForegroundStyle1
+  actions:
+  - {sendKeys: Shift+Control+j}
+  - {symbol: '#'}
+  selectedStyle: alphabeticHoldSymbolsSelectedStyle
+  selectedIndex: 1
+
+cButtonHoldSymbolsForegroundStyle0:
+  text: 拆
+  <<: *iaqp
+
+cButtonHoldSymbolsForegroundStyle1:
+  text: '#'
+  <<: *iaqp
+
+vButton:
+  size:
+    width:
+      percentage: 0.1
+    height:
+      percentage: 1
+  backgroundStyle: vButtonBackgroundStyle
+  foregroundStyle:
+  - vButtonForegroundStyle
+  - vButtonForegroundStyle1
+  - vButtonUpForegroundStyle
+  - vButtonDownForegroundStyle
+  uppercasedStateForegroundStyle:
+  - vButtonUppercasedStateForegroundStyle
+  - vButtonUppercasedStateForegroundStyle1
+  - vButtonUpForegroundStyle
+  - vButtonDownForegroundStyle
+  capsLockedStateForegroundStyle:
+  - vButtonUppercasedStateForegroundStyle
+  - vButtonUppercasedStateForegroundStyle1
+  - vButtonUpForegroundStyle
+  - vButtonDownForegroundStyle
+  hintStyle: vButtonHintStyle
+  action: {symbol: v}
+  uppercasedStateAction: {symbol: V}
+  swipeUpAction: {symbol: '?'}
+  swipeDownAction: {shortcutCommand: '#粘贴'}
+  holdSymbolsStyle: vButtonHoldSymbolsStyle
+
+vButtonBackgroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: anjian
+    image: IMG1
+  highlightImage:
+    file: anjian
+    image: IMG2
+
+vButtonForegroundStyle:
+  animation: alphabeticForegroundAnimation1
+  normalImage:
+    file: letter
+    image: IMG49
+  highlightImage:
+    file: letter_p
+    image: IMG49
+  <<: *26zf
+
+vButtonForegroundStyle1:
+  text: V
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+vButtonUppercasedStateForegroundStyle:
+  animation: alphabeticForegroundAnimation1
+  normalImage:
+    file: letter
+    image: IMG23
+  highlightImage:
+    file: letter_p
+    image: IMG23
+  <<: *26zf
+
+vButtonUppercasedStateForegroundStyle1:
+  text: V
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+vButtonUpForegroundStyle:
+  text: '?'
+  <<: *uhzf
+
+vButtonDownForegroundStyle:
+  text: 粘贴
+  <<: *zxhzf
+
+vButtonHintStyle:
+  backgroundStyle: alphabeticHintBackgroundStyle
+  foregroundStyle: vButtonHintForegroundStyle
+  swipeUpForegroundStyle: vButtonSwipeUpHintForegroundStyle
+
+vButtonHintForegroundStyle:
+  text: V
+  <<: *axqp
+
+vButtonSwipeUpHintForegroundStyle:
+  text: '?'
+  <<: *uhqp
+
+vButtonHoldSymbolsStyle:
+  backgroundStyle: alphabeticHoldSymbolsBackgroundStyle
+  foregroundStyle:
+  - vButtonHoldSymbolsForegroundStyle0
+  actions:
+  - {symbol: '?'}
+  selectedStyle: alphabeticHoldSymbolsSelectedStyle
+  selectedIndex: 0
+
+vButtonHoldSymbolsForegroundStyle0:
+  text: '?'
+  <<: *iaqp
+
+bButton:
+  size:
+    width:
+      percentage: 0.1
+    height:
+      percentage: 1
+  backgroundStyle: bButtonBackgroundStyle
+  foregroundStyle:
+  - bButtonForegroundStyle
+  - bButtonForegroundStyle1
+  - bButtonUpForegroundStyle
+  - bButtonDownForegroundStyle
+  uppercasedStateForegroundStyle:
+  - bButtonUppercasedStateForegroundStyle
+  - bButtonUppercasedStateForegroundStyle1
+  - bButtonUpForegroundStyle
+  - bButtonDownForegroundStyle
+  capsLockedStateForegroundStyle:
+  - bButtonUppercasedStateForegroundStyle
+  - bButtonUppercasedStateForegroundStyle1
+  - bButtonUpForegroundStyle
+  - bButtonDownForegroundStyle
+  hintStyle: bButtonHintStyle
+  action: {symbol: b}
+  uppercasedStateAction: {symbol: B}
+  swipeUpAction: {symbol: '!'}
+  swipeDownAction: {floatKeyboardType: floatswitch}
+  holdSymbolsStyle: bButtonHoldSymbolsStyle
+
+bButtonBackgroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: anjian
+    image: IMG1
+  highlightImage:
+    file: anjian
+    image: IMG2
+
+bButtonForegroundStyle:
+  animation: alphabeticForegroundAnimation1
+  normalImage:
+    file: letter
+    image: IMG50
+  highlightImage:
+    file: letter_p
+    image: IMG50
+  <<: *26zf
+
+bButtonForegroundStyle1:
+  text: B
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+bButtonUppercasedStateForegroundStyle:
+  animation: alphabeticForegroundAnimation1
+  normalImage:
+    file: letter
+    image: IMG24
+  highlightImage:
+    file: letter_p
+    image: IMG24
+  <<: *26zf
+
+bButtonUppercasedStateForegroundStyle1:
+  text: B
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+bButtonUpForegroundStyle:
+  text: '!'
+  <<: *uhzf
+
+bButtonDownForegroundStyle:
+  text: 选单
+  <<: *zxhzf
+
+bButtonHintStyle:
+  backgroundStyle: alphabeticHintBackgroundStyle
+  foregroundStyle: bButtonHintForegroundStyle
+  swipeUpForegroundStyle: bButtonSwipeUpHintForegroundStyle
+
+bButtonHintForegroundStyle:
+  text: B
+  <<: *axqp
+
+bButtonSwipeUpHintForegroundStyle:
+  text: '!'
+  <<: *uhqp
+
+bButtonHoldSymbolsStyle:
+  backgroundStyle: alphabeticHoldSymbolsBackgroundStyle
+  foregroundStyle:
+  - bButtonHoldSymbolsForegroundStyle0
+  actions:
+  - {symbol: '!'}
+  selectedStyle: alphabeticHoldSymbolsSelectedStyle
+  selectedIndex: 0
+
+bButtonHoldSymbolsForegroundStyle0:
+  text: '!'
+  <<: *iaqp
+
+nButton:
+  size:
+    width:
+      percentage: 0.1
+    height:
+      percentage: 1
+  backgroundStyle: nButtonBackgroundStyle
+  foregroundStyle:
+  - nButtonForegroundStyle
+  - nButtonForegroundStyle1
+  - nButtonUpForegroundStyle
+  - nButtonDownForegroundStyle
+  uppercasedStateForegroundStyle:
+  - nButtonUppercasedStateForegroundStyle
+  - nButtonUppercasedStateForegroundStyle1
+  - nButtonUpForegroundStyle
+  - nButtonDownForegroundStyle
+  capsLockedStateForegroundStyle:
+  - nButtonUppercasedStateForegroundStyle
+  - nButtonUppercasedStateForegroundStyle1
+  - nButtonUpForegroundStyle
+  - nButtonDownForegroundStyle
+  hintStyle: nButtonHintStyle
+  action: {symbol: n}
+  uppercasedStateAction: {symbol: N}
+  swipeUpAction: {symbol: ','}
+  swipeDownAction: {shortcutCommand: '#行首'}
+  holdSymbolsStyle: nButtonHoldSymbolsStyle
+
+nButtonBackgroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: anjian
+    image: IMG1
+  highlightImage:
+    file: anjian
+    image: IMG2
+
+nButtonForegroundStyle:
+  animation: alphabeticForegroundAnimation1
+  normalImage:
+    file: letter
+    image: IMG51
+  highlightImage:
+    file: letter_p
+    image: IMG51
+  <<: *26zf
+
+nButtonForegroundStyle1:
+  text: N
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+nButtonUppercasedStateForegroundStyle:
+  animation: alphabeticForegroundAnimation1
+  normalImage:
+    file: letter
+    image: IMG25
+  highlightImage:
+    file: letter_p
+    image: IMG25
+  <<: *26zf
+
+nButtonUppercasedStateForegroundStyle1:
+  text: N
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+nButtonUpForegroundStyle:
+  text: ','
+  <<: *uhzf
+
+nButtonDownForegroundStyle:
+  text: 行首
+  <<: *zxhzf
+
+nButtonHintStyle:
+  backgroundStyle: alphabeticHintBackgroundStyle
+  foregroundStyle: nButtonHintForegroundStyle
+  swipeUpForegroundStyle: nButtonSwipeUpHintForegroundStyle
+
+nButtonHintForegroundStyle:
+  text: N
+  <<: *axqp
+
+nButtonSwipeUpHintForegroundStyle:
+  text: ','
+  <<: *uhqp
+
+nButtonHoldSymbolsStyle:
+  backgroundStyle: alphabeticHoldSymbolsBackgroundStyle
+  foregroundStyle:
+  - nButtonHoldSymbolsForegroundStyle0
+  - nButtonHoldSymbolsForegroundStyle1
+  actions:
+  - {symbol: ','}
+  - {symbol: 、}
+  selectedStyle: alphabeticHoldSymbolsSelectedStyle
+  selectedIndex: 0
+
+nButtonHoldSymbolsForegroundStyle0:
+  text: ','
+  <<: *iaqp
+
+nButtonHoldSymbolsForegroundStyle1:
+  text: 、
+  <<: *iaqp
+
+mButton:
+  size:
+    width:
+      percentage: 0.1
+    height:
+      percentage: 1
+  backgroundStyle: mButtonBackgroundStyle
+  foregroundStyle:
+  - mButtonForegroundStyle
+  - mButtonForegroundStyle1
+  - mButtonUpForegroundStyle
+  - mButtonDownForegroundStyle
+  uppercasedStateForegroundStyle:
+  - mButtonUppercasedStateForegroundStyle
+  - mButtonUppercasedStateForegroundStyle1
+  - mButtonUpForegroundStyle
+  - mButtonDownForegroundStyle
+  capsLockedStateForegroundStyle:
+  - mButtonUppercasedStateForegroundStyle
+  - mButtonUppercasedStateForegroundStyle1
+  - mButtonUpForegroundStyle
+  - mButtonDownForegroundStyle
+  hintStyle: mButtonHintStyle
+  action: {symbol: m}
+  uppercasedStateAction: {symbol: M}
+  swipeUpAction: {symbol: '*'}
+  swipeDownAction: {shortcutCommand: '#行尾'}
+  holdSymbolsStyle: mButtonHoldSymbolsStyle
+
+mButtonBackgroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: anjian
+    image: IMG1
+  highlightImage:
+    file: anjian
+    image: IMG2
+
+mButtonForegroundStyle:
+  animation: alphabeticForegroundAnimation1
+  normalImage:
+    file: letter
+    image: IMG52
+  highlightImage:
+    file: letter_p
+    image: IMG52
+  <<: *26zf
+
+mButtonForegroundStyle1:
+  text: M
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+mButtonUppercasedStateForegroundStyle:
+  animation: alphabeticForegroundAnimation1
+  normalImage:
+    file: letter
+    image: IMG26
+  highlightImage:
+    file: letter_p
+    image: IMG26
+  <<: *26zf
+
+mButtonUppercasedStateForegroundStyle1:
+  text: M
+  normalColor: FFFFFF00
+  highlightColor: FFFFFF00
+  <<: *26zf1
+
+mButtonUpForegroundStyle:
+  text: '*'
+  <<: *uhzf
+
+mButtonDownForegroundStyle:
+  text: 行尾
+  <<: *zxhzf
+
+mButtonHintStyle:
+  backgroundStyle: alphabeticHintBackgroundStyle
+  foregroundStyle: mButtonHintForegroundStyle
+  swipeUpForegroundStyle: mButtonSwipeUpHintForegroundStyle
+
+mButtonHintForegroundStyle:
+  text: M
+  <<: *axqp
+
+mButtonSwipeUpHintForegroundStyle:
+  text: .
+  <<: *uhqp
+
+mButtonHoldSymbolsStyle:
+  backgroundStyle: alphabeticHoldSymbolsBackgroundStyle
+  foregroundStyle:
+  - mButtonHoldSymbolsForegroundStyle0
+  - mButtonHoldSymbolsForegroundStyle1
+  actions:
+  - {symbol: '*'}
+  - {symbol: .}
+  selectedStyle: alphabeticHoldSymbolsSelectedStyle
+  selectedIndex: 1
+
+mButtonHoldSymbolsForegroundStyle0:
+  text: '*'
+  <<: *iaqp
+
+mButtonHoldSymbolsForegroundStyle1:
+  text: .
+  <<: *iaqp
+
+backspaceButton:
+  size:
+    width:
+      percentage: 0.15
+    height:
+      percentage: 1
+  backgroundStyle: backspaceButtonBackgroundStyle
+  foregroundStyle: backspaceButtonForegroundStyle
+  action: backspace
+  repeatAction: backspace
+  swipeLeftAction: {shortcutCommand: '#重输'}
+  swipeUpAction: {shortcutCommand: '#重输'}
+  swipeDownAction: {symbol: ''}
+
+backspaceButtonBackgroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: anjian
+    image: IMG3
+  highlightImage:
+    file: anjian
+    image: IMG4
+
+backspaceButtonForegroundStyle:
+  animation: systemForegroundAnimation
+  normalImage:
+    file: more
+    image: IMG2
+  highlightImage:
+    file: more2
+    image: IMG2
+  <<: *Backspace_qj
+
+symButton:
+  size:
+    width:
+      percentage: 0.1
+  backgroundStyle: symButtonBackgroundStyle
+  foregroundStyle: symButtonForegroundStyle
+  action: {keyboardType: symbolic}
+  swipeUpAction: {keyboardType: emoji}
+
+symButtonBackgroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: anjian
+    image: IMG3
+  highlightImage:
+    file: anjian
+    image: IMG4
+
+symButtonForegroundStyle:
+  animation: systemForegroundAnimation
+  normalImage:
+    file: more
+    image: IMG3
+  highlightImage:
+    file: more2
+    image: IMG3
+  <<: *sym_qj
+
+123Button:
+  size:
+    width:
+      percentage: 0.1
+  backgroundStyle: 123ButtonBackgroundStyle
+  foregroundStyle: 123ButtonForegroundStyle
+  action: {keyboardType: numeric}
+  swipeUpAction: {shortcutCommand: '#三选上屏'}
+  swipeDownAction: {symbol: ''}
+  holdSymbolsStyle: 123ButtonHoldSymbolsStyle
+
+123ButtonBackgroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: anjian
+    image: IMG3
+  highlightImage:
+    file: anjian
+    image: IMG4
+
+123ButtonForegroundStyle:
+  animation: systemForegroundAnimation
+  normalImage:
+    file: more
+    image: IMG9
+  highlightImage:
+    file: more2
+    image: IMG9
+  <<: *123_qj
+
+123ButtonHoldSymbolsStyle:
+  backgroundStyle: alphabeticHoldSymbolsBackgroundStyle
+  foregroundStyle:
+  - 123ButtonHoldSymbolsForegroundStyle0
+  - 123ButtonHoldSymbolsForegroundStyle1
+  - 123ButtonHoldSymbolsForegroundStyle2
+  - 123ButtonHoldSymbolsForegroundStyle3
+  - 123ButtonHoldSymbolsForegroundStyle4
+  - 123ButtonHoldSymbolsForegroundStyle5
+  - 123ButtonHoldSymbolsForegroundStyle6
+  actions:
+  - {symbol: ￥}
+  - {symbol: ÷}
+  - {symbol: ×}
+  - {symbol: '='}
+  - {symbol: +}
+  - {symbol: '-'}
+  - {symbol: '%'}
+  selectedStyle: alphabeticHoldSymbolsSelectedStyle
+  selectedIndex: 3
+
+123ButtonHoldSymbolsForegroundStyle0:
+  text: ￥
+  <<: *iaqp
+123ButtonHoldSymbolsForegroundStyle1:
+  text: ÷
+  <<: *iaqp
+123ButtonHoldSymbolsForegroundStyle2:
+  text: ×
+  <<: *iaqp
+123ButtonHoldSymbolsForegroundStyle3:
+  text: '='
+  <<: *iaqp
+123ButtonHoldSymbolsForegroundStyle4:
+  text: +
+  <<: *iaqp
+123ButtonHoldSymbolsForegroundStyle5:
+  text: '-'
+  <<: *iaqp
+123ButtonHoldSymbolsForegroundStyle6:
+  text: '%'
+  <<: *iaqp
+
+puncButton:
+  size:
+    width:
+      percentage: 0.1
+  backgroundStyle: puncButtonBackgroundStyle
+  foregroundStyle: puncButtonForegroundStyle
+  action: {symbol: .}
+  swipeUpAction: {symbol: ','}
+  swipeDownAction: {symbol: ''}
+  holdSymbolsStyle: puncButtonHoldSymbolsStyle
+
+puncButtonBackgroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: anjian
+    image: IMG1
+  highlightImage:
+    file: anjian
+    image: IMG2
+
+puncButtonForegroundStyle:
+  animation: systemForegroundAnimation
+  normalImage:
+    file: more
+    image: IMG17
+  highlightImage:
+    file: more2
+    image: IMG17
+  <<: *punc_qj
+
+puncButtonHoldSymbolsStyle:
+  backgroundStyle: alphabeticHoldSymbolsBackgroundStyle
+  foregroundStyle:
+  - puncButtonHoldSymbolsForegroundStyle0
+  - puncButtonHoldSymbolsForegroundStyle1
+  - puncButtonHoldSymbolsForegroundStyle2
+  - puncButtonHoldSymbolsForegroundStyle3
+  - puncButtonHoldSymbolsForegroundStyle4
+  - puncButtonHoldSymbolsForegroundStyle5
+  - puncButtonHoldSymbolsForegroundStyle6
+  actions:
+  - {symbol: '*'}
+  - {symbol: ^}
+  - {symbol: $}
+  - {symbol: \}
+  - {symbol: ':'}
+  - {symbol: '&'}
+  - {symbol: '|'}
+  selectedStyle: alphabeticHoldSymbolsSelectedStyle
+  selectedIndex: 3
+
+puncButtonHoldSymbolsForegroundStyle0:
+  text: '*'
+  <<: *iaqp
+
+puncButtonHoldSymbolsForegroundStyle1:
+  text: ^
+  <<: *iaqp
+
+puncButtonHoldSymbolsForegroundStyle2:
+  text: $
+  <<: *iaqp
+
+puncButtonHoldSymbolsForegroundStyle3:
+  text: \
+  <<: *iaqp
+
+puncButtonHoldSymbolsForegroundStyle4:
+  text: ':'
+  <<: *iaqp
+
+puncButtonHoldSymbolsForegroundStyle5:
+  text: '&'
+  <<: *iaqp
+
+puncButtonHoldSymbolsForegroundStyle6:
+  text: '|'
+  <<: *iaqp
+
+spaceButton:
+  size:
+    width:
+      percentage: 0.35
+  backgroundStyle: spaceButtonBackgroundStyle
+  foregroundStyle: spaceButtonForegroundStyle
+  action: space
+  swipeUpAction: {shortcutCommand: '#次选上屏'}
+  swipeDownAction: {shortcutCommand: '#三选上屏'}
+  #swipeLeftAction: {shortcutCommand: '#左移'}
+  #swipeRightAction: {shortcutCommand: '#右移'}
+
+spaceButtonBackgroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: anjian
+    image: IMG1
+  highlightImage:
+    file: anjian
+    image: IMG2
+
+spaceButtonForegroundStyle:
+  animation: systemForegroundAnimation
+  normalImage:
+    file: more
+    image: IMG20
+  highlightImage:
+    file: more2
+    image: IMG20
+  <<: *space_qj
+
+cnenButton:
+  size:
+    width:
+      percentage: 0.1
+  backgroundStyle: cnenButtonBackgroundStyle
+  foregroundStyle:
+  - cnenButtonForegroundStyle
+  - cnenButtonForegroundStyle1
+  action: {keyboardType: pinyin}
+  # swipeUpAction: {shortcutCommand: '#中英切换'}
+  swipeDownAction: dismissKeyboard
+  holdSymbolsStyle: cnenButtonHoldSymbolsStyle
+
+cnenButtonBackgroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: anjian
+    image: IMG1
+  highlightImage:
+    file: anjian
+    image: IMG2
+
+cnenButtonForegroundStyle:
+  animation: systemForegroundAnimation
+  normalColor: ffffff
+  highlightColor: ffffff
+  fontSize: 14
+  <<: *cnen_qj
+  text: 英
+
+cnenButtonHoldSymbolsStyle:
+  backgroundStyle: alphabeticHoldSymbolsBackgroundStyle
+  foregroundStyle:
+  - cnenButtonHoldSymbolsForegroundStyle0
+  - cnenButtonHoldSymbolsForegroundStyle1
+  - cnenButtonHoldSymbolsForegroundStyle2
+  - cnenButtonHoldSymbolsForegroundStyle3
+  - cnenButtonHoldSymbolsForegroundStyle4
+  - cnenButtonHoldSymbolsForegroundStyle5
+  - cnenButtonHoldSymbolsForegroundStyle6
+  - cnenButtonHoldSymbolsForegroundStyle7
+  actions:
+  - {symbol: <}
+  - {symbol: '['}
+  - {symbol: '{'}
+  - {symbol: (}
+  - {symbol: )}
+  - {symbol: '}'}
+  - {symbol: ']'}
+  - {symbol: '>'}
+  selectedStyle: alphabeticHoldSymbolsSelectedStyle
+  selectedIndex: 3
+
+cnenButtonHoldSymbolsForegroundStyle0:
+  text: <
+  <<: *iaqp
+
+cnenButtonHoldSymbolsForegroundStyle1:
+  text: '['
+  <<: *iaqp
+
+cnenButtonHoldSymbolsForegroundStyle2:
+  text: '{'
+  <<: *iaqp
+
+cnenButtonHoldSymbolsForegroundStyle3:
+  text: (
+  <<: *iaqp
+
+cnenButtonHoldSymbolsForegroundStyle4:
+  text: )
+  <<: *iaqp
+
+cnenButtonHoldSymbolsForegroundStyle5:
+  text: '}'
+  <<: *iaqp
+
+cnenButtonHoldSymbolsForegroundStyle6:
+  text: ']'
+  <<: *iaqp
+
+cnenButtonHoldSymbolsForegroundStyle7:
+  text: '>'
+  <<: *iaqp
+
+enterButton:
+  size:
+    width:
+      percentage: 0.22
+  backgroundStyle: enterButtonBackgroundStyle
+  foregroundStyle:
+  - enterButtonForegroundStyle
+  - enterButtonForegroundStyle1
+  action: enter
+  swipeUpAction: {shortcutCommand: '#换行'}
+  swipeDownAction: {shortcutCommand: '#方案切换'}
+
+enterButtonBackgroundStyle:
+  animation: alphabeticBackgroundAnimation
+  normalImage:
+    file: anjian
+    image: IMG9
+  highlightImage:
+    file: anjian
+    image: IMG10
+
+enterButtonForegroundStyle:
+  animation: systemForegroundAnimation
+  normalImage:
+    file: more
+    image: IMG4
+  highlightImage:
+    file: more2
+    image: IMG4
+  <<: *enter_qj
+
+enterButtonForegroundStyle1:
+  animation: systemForegroundAnimation
+  normalImage:
+    file: more
+    image: IMG18
+  highlightImage:
+    file: more2
+    image: IMG！8
+  <<: *enter_qj1
+
+# 字母按键背景动画
+alphabeticBackgroundAnimation:
+  # type: 动画类型
+  # - bounds: 尺寸大小变化动画
+- type: bounds
+  duration: 60   # 动画时长，单位毫秒
+  repeatCount: 1
+  fromScale: 1
+  toScale: 0.87
+- type: bounds
+  duration: 80
+  repeatCount: 1
+  fromScale: 0.87
+  toScale: 1
+- type: apng
+  file: animation
+
+#功能键前景动画
+systemForegroundAnimation:
+  # type: 动画类型
+  # - bounds: 尺寸大小变化动画
+- type: bounds
+  duration: 60   # 动画时长，单位毫秒
+  repeatCount: 1
+  fromScale: 1
+  toScale: 0.87
+- type: bounds
+  duration: 80
+  repeatCount: 1
+  fromScale: 0.87
+  toScale: 1
+- type: apng
+  file: animation
+
+# 字母按键前景动画
+alphabeticForegroundAnimation:
+  # type: 动画类型
+  # - bounds: 尺寸大小变化动画
+- type: bounds
+  duration: 60   # 动画时长，单位毫秒
+  repeatCount: 1
+  fromScale: 1
+  toScale: 0.87
+- type: emit
+      #file: transparent
+      #file: [00, 01, 02, 03, 04, 05, 06, 07, 08, 09]
+  file: [00, 01, 02, 03, 04, 05, 06]
+  duration: 800
+  targetScale: 0.3
+  enableRandomImage: true
+  randomPositionX: 20
+  randomPositionY: 15
+  rotationBegin: 0
+  rotationEnd: 3.14   #6.25
+  randomRotation: 1   #2
+  alphaBegin: 1
+  alphaEnd: 0.3
+- type: bounds
+  duration: 80
+  repeatCount: 1
+  fromScale: 0.87
+  toScale: 1
+- type: apng
+  file: animation
+  zPosition: 1
+#`below`(表示在当前按键下层显示) 和 `above`(表示在当前按键上层显示) 两个值
+
+alphabeticForegroundAnimation1:
+  # type: 动画类型
+  # - bounds: 尺寸大小变化动画
+- type: bounds
+  duration: 60   # 动画时长，单位毫秒
+  repeatCount: 1
+  fromScale: 1
+  toScale: 0.87
+- type: emit
+      #file: transparent
+      #file: [00, 01, 02, 03, 04, 05, 06, 07, 08, 09]
+  file: [00, 01, 02, 03, 04, 05, 06]
+  duration: 800
+  targetScale: 0.3
+  enableRandomImage: true
+  randomPositionX: 20
+  randomPositionY: 15
+  rotationBegin: 0
+  rotationEnd: 3.14   #6.25
+  randomRotation: 1   #2
+  alphaBegin: 1
+  alphaEnd: 0.3
+- type: bounds
+  duration: 80
+  repeatCount: 1
+  fromScale: 0.87
+  toScale: 1
+- type: apng
+  file: animation
+  zPosition: 1
+
+# 字母按键气泡背景样式
+alphabeticHintBackgroundStyle:
+  normalImage:
+    file: hint
+    image: IMG3
+  targetScale: 0.9
+  center:
+    x: 0.5
+    y: 0.55
+
+# 字母按键长按背景样式
+alphabeticHoldSymbolsBackgroundStyle:
+  normalImage:
+    file: hint
+    image: IMG1
+  targetScale:
+    x: 1
+    y: 0.85
+  center:
+    x: 0.5
+    y: 0.55
+
+# 字母按键长按选中状态背景样式
+alphabeticHoldSymbolsSelectedStyle:
+  normalImage:
+    file: hint
+    image: IMG2
+  targetScale: 0.6
+  center:
+    x: 0.5
+    y: 0.56
+
+keyboardBackgroundStyle_PANEL:
+  normalImage:
+    file: bj
+    image: IMG4
+keyboardBackgroundStyle_KEY1:
+  normalImage:
+    file: bj
+    image: IMG2
+keyboardBackgroundStyle_KEY2:
+  normalImage:
+    file: ''
+    image: IMG
+keyboardBackgroundStyle_KEY3:
+  normalImage:
+    file: ''
+    image: IMG

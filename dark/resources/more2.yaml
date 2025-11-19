@@ -1,0 +1,144 @@
+IMG1:
+  rect:
+    x: 0
+    y: 0
+    width: 130
+    height: 80
+IMG2:
+  rect:
+    x: 130
+    y: 0
+    width: 130
+    height: 80
+IMG3:
+  rect:
+    x: 260
+    y: 0
+    width: 130
+    height: 80
+IMG4:
+  rect:
+    x: 390
+    y: 0
+    width: 130
+    height: 80
+IMG5:
+  rect:
+    x: 520
+    y: 0
+    width: 130
+    height: 80
+IMG6:
+  rect:
+    x: 650
+    y: 0
+    width: 110
+    height: 80
+IMG7:
+  rect:
+    x: 760
+    y: 0
+    width: 110
+    height: 80
+IMG8:
+  rect:
+    x: 870
+    y: 0
+    width: 110
+    height: 80
+IMG9:
+  rect:
+    x: 0
+    y: 80
+    width: 110
+    height: 80
+IMG10:
+  rect:
+    x: 110
+    y: 80
+    width: 110
+    height: 80
+IMG11:
+  rect:
+    x: 220
+    y: 80
+    width: 110
+    height: 80
+IMG12:
+  rect:
+    x: 330
+    y: 80
+    width: 110
+    height: 80
+IMG13:
+  rect:
+    x: 440
+    y: 80
+    width: 110
+    height: 80
+IMG14:
+  rect:
+    x: 550
+    y: 80
+    width: 80
+    height: 80
+IMG15:
+  rect:
+    x: 630
+    y: 80
+    width: 80
+    height: 80
+IMG16:
+  rect:
+    x: 710
+    y: 80
+    width: 80
+    height: 80
+IMG17:
+  rect:
+    x: 790
+    y: 80
+    width: 80
+    height: 80
+IMG18:
+  rect:
+    x: 870
+    y: 80
+    width: 150
+    height: 80
+IMG19:
+  rect:
+    x: 1020
+    y: 80
+    width: 80
+    height: 150
+IMG20:
+  rect:
+    x: 0
+    y: 160
+    width: 210
+    height: 50
+IMG21:
+  rect:
+    x: 260
+    y: 160
+    width: 210
+    height: 80
+IMG22:
+  rect:
+    x: 520
+    y: 160
+    width: 210
+    height: 80
+IMG23:
+  rect:
+    x: 980
+    y: 0
+    width: 80
+    height: 80
+IMG24:
+  rect:
+    x: 0
+    y: 240
+    width: 210
+    height: 50
