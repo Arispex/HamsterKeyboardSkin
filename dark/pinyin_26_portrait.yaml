@@ -837,7 +837,7 @@ eButton:
   action: {character: e}
   uppercasedStateAction: {character: E}
   swipeUpAction: {symbol: 3}
-  swipeDownAction: {character: '{'}
+  swipeDownAction: {character: '「'}
   holdSymbolsStyle: eButtonHoldSymbolsStyle
 
 eButtonBackgroundStyle:
@@ -886,7 +886,7 @@ eButtonUpForegroundStyle:
   <<: *uhzf
 
 eButtonDownForegroundStyle:
-  text: '{'
+  text: '「'
   <<: *xhzf
 
 eButtonHintStyle:
@@ -953,7 +953,7 @@ rButton:
   action: {character: r}
   uppercasedStateAction: {character: R}
   swipeUpAction: {symbol: 4}
-  swipeDownAction: {character: '}'}
+  swipeDownAction: {character: '」'}
   holdSymbolsStyle: rButtonHoldSymbolsStyle
 
 rButtonBackgroundStyle:
@@ -1002,7 +1002,7 @@ rButtonUpForegroundStyle:
   <<: *uhzf
 
 rButtonDownForegroundStyle:
-  text: '}'
+  text: '」'
   <<: *xhzf
 
 rButtonHintStyle:
@@ -1069,7 +1069,7 @@ tButton:
   action: {character: t}
   uppercasedStateAction: {character: T}
   swipeUpAction: {symbol: 5}
-  swipeDownAction: {character: '['}
+  swipeDownAction: {character: '【'}
   holdSymbolsStyle: tButtonHoldSymbolsStyle
 
 tButtonBackgroundStyle:
@@ -1118,7 +1118,7 @@ tButtonUpForegroundStyle:
   <<: *uhzf
 
 tButtonDownForegroundStyle:
-  text: '['
+  text: '【'
   <<: *xhzf
 
 tButtonHintStyle:
@@ -1185,7 +1185,7 @@ yButton:
   action: {character: y}
   uppercasedStateAction: {character: Y}
   swipeUpAction: {symbol: 6}
-  swipeDownAction: {character: ']'}
+  swipeDownAction: {character: '】'}
   holdSymbolsStyle: yButtonHoldSymbolsStyle
 
 yButtonBackgroundStyle:
@@ -1234,7 +1234,7 @@ yButtonUpForegroundStyle:
   <<: *uhzf
 
 yButtonDownForegroundStyle:
-  text: ']'
+  text: '】'
   <<: *xhzf
 
 yButtonHintStyle:
@@ -1997,7 +1997,7 @@ dButton:
   hintStyle: dButtonHintStyle
   action: {character: d}
   uppercasedStateAction: {character: D}
-  swipeUpAction: {character: ':'}
+  swipeUpAction: {character: '：'}
   swipeDownAction: {character: 、}
   holdSymbolsStyle: dButtonHoldSymbolsStyle
 
@@ -2043,7 +2043,7 @@ dButtonUppercasedStateForegroundStyle1:
   <<: *26zf1
 
 dButtonUpForegroundStyle:
-  text: ':'
+  text: '：'
   <<: *uhzf
 
 dButtonDownForegroundStyle:
@@ -2115,7 +2115,7 @@ fButton:
   hintStyle: fButtonHintStyle
   action: {character: f}
   uppercasedStateAction: {character: F}
-  swipeUpAction: {character: ;}
+  swipeUpAction: {character: '；'}
   swipeDownAction: {character: +}
   holdSymbolsStyle: fButtonHoldSymbolsStyle
 
@@ -2161,7 +2161,7 @@ fButtonUppercasedStateForegroundStyle1:
   <<: *26zf1
 
 fButtonUpForegroundStyle:
-  text: ;
+  text: ；
   <<: *uhzf
 
 fButtonDownForegroundStyle:
@@ -2178,7 +2178,7 @@ fButtonHintForegroundStyle:
   <<: *axqp
 
 fButtonSwipeUpHintForegroundStyle:
-  text: ;
+  text: ；
   <<: *uhqp
 
 fButtonHoldSymbolsStyle:
@@ -2219,8 +2219,8 @@ gButton:
   hintStyle: gButtonHintStyle
   action: {character: g}
   uppercasedStateAction: {character: G}
-  swipeUpAction: {character: (}
-  swipeDownAction: {character: <}
+  swipeUpAction: {character: （}
+  swipeDownAction: {character: 《}
   holdSymbolsStyle: gButtonHoldSymbolsStyle
 
 gButtonBackgroundStyle:
@@ -2265,11 +2265,11 @@ gButtonUppercasedStateForegroundStyle1:
   <<: *26zf1
 
 gButtonUpForegroundStyle:
-  text: (
+  text: （
   <<: *uhzf
 
 gButtonDownForegroundStyle:
-  text: <
+  text: 《
   <<: *xhzf
 
 gButtonHintStyle:
@@ -2335,8 +2335,8 @@ hButton:
   hintStyle: hButtonHintStyle
   action: {character: h}
   uppercasedStateAction: {character: H}
-  swipeUpAction: {character: )}
-  swipeDownAction: {character: '>'}
+  swipeUpAction: {character: ）}
+  swipeDownAction: {character: '》'}
   holdSymbolsStyle: hButtonHoldSymbolsStyle
 
 hButtonBackgroundStyle:
@@ -2381,11 +2381,11 @@ hButtonUppercasedStateForegroundStyle1:
   <<: *26zf1
 
 hButtonUpForegroundStyle:
-  text: )
+  text: ）
   <<: *uhzf
 
 hButtonDownForegroundStyle:
-  text: '>'
+  text: '》'
   <<: *xhzf
 
 hButtonHintStyle:
@@ -2452,7 +2452,7 @@ jButton:
   action: {character: j}
   uppercasedStateAction: {character: J}
   swipeUpAction: {character: '@'}
-  swipeDownAction: {character: $}
+  swipeDownAction: {character: ¥}
   holdSymbolsStyle: jButtonHoldSymbolsStyle
 
 jButtonBackgroundStyle:
@@ -2501,7 +2501,7 @@ jButtonUpForegroundStyle:
   <<: *uhzf
 
 jButtonDownForegroundStyle:
-  text: $
+  text: ¥
   <<: *xhzf
 
 jButtonHintStyle:
@@ -2567,7 +2567,7 @@ kButton:
   hintStyle: kButtonHintStyle
   action: {character: k}
   uppercasedStateAction: {character: K}
-  swipeUpAction: {character: '"'}
+  swipeUpAction: {character: '“'}
   swipeDownAction: {symbol: '"'}
   holdSymbolsStyle: kButtonHoldSymbolsStyle
 
@@ -2688,7 +2688,7 @@ lButton:
   hintStyle: lButtonHintStyle
   action: {character: l}
   uppercasedStateAction: {character: L}
-  swipeUpAction: {character: '"'}
+  swipeUpAction: {character: '”'}
   swipeDownAction: {symbol: "'"}
   holdSymbolsStyle: lButtonHoldSymbolsStyle
 
@@ -3204,7 +3204,7 @@ vButton:
   hintStyle: vButtonHintStyle
   action: {character: v}
   uppercasedStateAction: {character: V}
-  swipeUpAction: {character: '?'}
+  swipeUpAction: {character: '？'}
   swipeDownAction: {shortcutCommand: '#粘贴'}
   holdSymbolsStyle: vButtonHoldSymbolsStyle
 
@@ -3250,7 +3250,7 @@ vButtonUppercasedStateForegroundStyle1:
   <<: *26zf1
 
 vButtonUpForegroundStyle:
-  text: '?'
+  text: '？'
   <<: *uhzf
 
 vButtonDownForegroundStyle:
@@ -3308,7 +3308,7 @@ bButton:
   hintStyle: bButtonHintStyle
   action: {character: b}
   uppercasedStateAction: {character: B}
-  swipeUpAction: {character: '!'}
+  swipeUpAction: {character: '！'}
   swipeDownAction: {floatKeyboardType: floatswitch}
   holdSymbolsStyle: bButtonHoldSymbolsStyle
 
@@ -3354,7 +3354,7 @@ bButtonUppercasedStateForegroundStyle1:
   <<: *26zf1
 
 bButtonUpForegroundStyle:
-  text: '!'
+  text: '！'
   <<: *uhzf
 
 bButtonDownForegroundStyle:
@@ -3412,7 +3412,7 @@ nButton:
   hintStyle: nButtonHintStyle
   action: {character: n}
   uppercasedStateAction: {character: N}
-  swipeUpAction: {character: ','}
+  swipeUpAction: {character: '，'}
   swipeDownAction: {shortcutCommand: '#行首'}
   holdSymbolsStyle: nButtonHoldSymbolsStyle
 
@@ -3458,7 +3458,7 @@ nButtonUppercasedStateForegroundStyle1:
   <<: *26zf1
 
 nButtonUpForegroundStyle:
-  text: ','
+  text: '，'
   <<: *uhzf
 
 nButtonDownForegroundStyle:
@@ -3522,7 +3522,7 @@ mButton:
   hintStyle: mButtonHintStyle
   action: {character: m}
   uppercasedStateAction: {character: M}
-  swipeUpAction: {character: .}
+  swipeUpAction: {character: 。}
   swipeDownAction: {shortcutCommand: '#行尾'}
   holdSymbolsStyle: mButtonHoldSymbolsStyle
 
@@ -3585,7 +3585,7 @@ mButtonHintForegroundStyle:
   <<: *axqp
 
 mButtonSwipeUpHintForegroundStyle:
-  text: .
+  text: 。
   <<: *uhqp
 
 mButtonHoldSymbolsStyle:
