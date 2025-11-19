@@ -152,7 +152,7 @@ ButtonHoldSymbolsOfqForeground: &iaqp
 
 preeditHeight: 26
 toolbarHeight: 45
-keyboardHeight: 216
+keyboardHeight: 226
 
 preedit:
   insets: {left: 10, top: 2}
