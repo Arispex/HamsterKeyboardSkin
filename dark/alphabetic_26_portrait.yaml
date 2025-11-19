@@ -3567,7 +3567,7 @@ mButtonUppercasedStateForegroundStyle1:
   <<: *26zf1
 
 mButtonUpForegroundStyle:
-  text: '*'
+  text: '.'
   <<: *uhzf
 
 mButtonDownForegroundStyle:
