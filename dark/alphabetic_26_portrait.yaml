@@ -1,11 +1,11 @@
-#26键字符图片样式
+#26 键字符图片样式
 26zfstyle: &26zf
   targetScale: 0.5
   center:
     x: 0.5
     y: 0.5
 
-#26键字符字符样式
+#26 键字符字符样式
 26zfstyle1: &26zf1
   fontSize: 15
   center:
@@ -31,7 +31,7 @@ ButtonDownForeground: &xhzf
     y: 0.6
   fontSize: 8
 
-#z~m下划字符样式
+#z~m 下划字符样式
 zButtonDownForeground: &zxhzf
   normalColor: b5bac4
   highlightColor: fafafa00
@@ -40,49 +40,49 @@ zButtonDownForeground: &zxhzf
     y: 1.18
   fontSize: 7
 
-#Shift按钮前景样式
+#Shift 按钮前景样式
 shiftButtonForeground: &shift_qj
   targetScale: 0.7
   center:
     x: 0.5
     y: 0.45
 
-#Backspace按钮前景图片样式
+#Backspace 按钮前景图片样式
 BackspaceButtonForeground: &Backspace_qj
   targetScale: 0.8
   center:
     x: 0.5
     y: 0.45
 
-#123按钮前景图片样式
+#123 按钮前景图片样式
 123ButtonForeground: &123_qj
   targetScale: 1
   center:
     x: 0.5
     y: 0.46
 
-#sym按钮前景图片样式
+#sym 按钮前景图片样式
 symButtonForeground: &sym_qj
   targetScale: 0.8
   center:
     x: 0.5
     y: 0.46
 
-#punc按钮前景样式
+#punc 按钮前景样式
 puncButtonForeground: &punc_qj
   targetScale: 0.7
   center:
     x: 0.5
     y: 0.46
 
-#space按钮前景图片样式
+#space 按钮前景图片样式
 spaceButtonForeground: &space_qj
   targetScale: 0.55
   center:
     x: 0.5
     y: 0.4
 
-#enter按钮前景图片样式
+#enter 按钮前景图片样式
 ReturnButtonForeground: &enter_qj
   targetScale: 0.6
   center:
@@ -95,7 +95,7 @@ ReturnButtonForeground1: &enter_qj1
     x: 0.35
     y: 0.46
 
-#cnen按钮前景样式
+#cnen 按钮前景样式
 cnenButtonForeground: &cnen_qj
   #targetScale: 0.95
   center:
@@ -111,7 +111,7 @@ cnenButtonForeground: &cnen_qj
 下拉文字字体大小: &FontSize_xlwz 20
 下拉注释字体大小: &FontSize_xlvu 16
 
-#状态栏图标字符样式(暂时保留)
+#状态栏图标字符样式 (暂时保留)
 #toolbarButtonForeground: &vtltb
 toolbarButtonForeground:
   normalColor: F0ffffff
@@ -3521,7 +3521,7 @@ mButton:
   hintStyle: mButtonHintStyle
   action: {symbol: m}
   uppercasedStateAction: {symbol: M}
-  swipeUpAction: {symbol: '*'}
+  swipeUpAction: {symbol: '.'}
   swipeDownAction: {shortcutCommand: '#行尾'}
   holdSymbolsStyle: mButtonHoldSymbolsStyle
 
