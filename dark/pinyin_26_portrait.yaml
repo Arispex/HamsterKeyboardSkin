@@ -151,7 +151,7 @@ ButtonHoldSymbolsOfqForeground: &iaqp
     y: 0.8
 
 preeditHeight: 26
-toolbarHeight: 55
+toolbarHeight: 45
 keyboardHeight: 216
 
 preedit:
@@ -363,7 +363,7 @@ toolbarButton7ForegroundStyle:
   #<<: *vtltb
 
 horizontalCandidateStyle:
-  insets: {left: 10, top: 13, bottom: 5}
+  insets: {left: 10, top: 8, bottom: 0}
   candidateStateButtonStyle: candidateStateButtonStyle
   highlightBackgroundColor: 1A1A1A
   preferredBackgroundColor: 1A1A1A
